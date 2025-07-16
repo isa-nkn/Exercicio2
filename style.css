@@ -42,18 +42,118 @@ main {
 h2 {
     padding: 2rem 0 0 2rem;
     font-size: 25px;
+    margin-left: 17px;
 }
 
 .categorias {
     display: inline-block;
     width: 340px;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 .cartaz1 {
     width: 100%;
     display: block;
     margin: 0 auto;
+    text-decoration: none;
+}
+
+.carrossel {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    font-size: 14px;
+    margin-bottom: 80px;
+}
+
+.blocoinfo {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 23px;
+    justify-content: space-evenly;
+    width: 280px;
+    height: 500px;
+    font-size: 13.5px;
+    color: #222222;
+}
+
+.blocoinfo h3 {
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.foto-info {
+    width: 280px;
+    height: 175px;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+}
+
+.informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+}
+
+.foto-pqn {
+    height: 17px;
+    width: 17px;
+    margin-left: 20px;
+    margin-right: 0%;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.meu-botao-ativo {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #007BFF;
+    color: #007BFF;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+}
+
+.meu-botao:hover {
+    color: white;
+    background-color: #007BFF;
+}
+
+.meu-botao-inativo {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #9CA3AF;
+    color: #9CA3AF;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+}
+
+.meu-botao-inativo:hover {
+    color: white;
+    background-color: #9CA3AF;
 }
 
 .cinzas  {
@@ -155,6 +255,7 @@ footer {
 footer h2{
     color: white;
     font-size: 20px;
+    margin-left: 0px;
 }
 
 .footer-geral {

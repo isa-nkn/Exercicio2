@@ -130,7 +130,7 @@ h2 {
     font-size: 14px;
 }
 
-.meu-botao:hover {
+.meu-botao-.meu-botao-ativo {
     color: white;
     background-color: #007BFF;
 }

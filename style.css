@@ -218,7 +218,7 @@ h2 {
 
 .trilha {
     display: flex;
-    background-color: #efeeee;
+    background-color: #f6f6f9;
     border-radius: 23px;
     margin: 10px 20px 0 47px;
     text-align: left;
@@ -413,15 +413,25 @@ details {
   display: none;
 }
 
+.ver {
+    display: flex;
+    justify-content: center;
+}
+
 .botao {
-  color: #007BFF;
-  cursor: pointer;
-  display: block;
-  margin-top: 10px;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 40px;
-  font-size: 17.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #007BFF;
+    color: #007BFF;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    font-size: 17px;
+    margin-bottom: 40px;
+    font-weight: 500;
 }
 
 footer {

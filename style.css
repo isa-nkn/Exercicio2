@@ -434,6 +434,11 @@ details {
     font-weight: 500;
 }
 
+.botao:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
 footer {
   display: flex;
   flex-direction: column;

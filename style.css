@@ -64,7 +64,7 @@ h2 {
 
 .categorias {
     display: flex;
-    width: 285px;
+    width: 95%;
     height: 140px;
     margin-top: 20px;
 }
@@ -300,7 +300,7 @@ h2 {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1000px;
+    max-width: 80%;
     margin: 0 auto 2rem auto;
 }
 

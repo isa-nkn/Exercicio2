@@ -14,12 +14,10 @@ body {
 
 header {
     display: flex;
+    justify-content: space-evenly;
     width: 100%;
-    padding: 1.23rem;
-    gap: 5.5rem;
-    text-align: center;
-    margin: auto;
-    margin-top: 10px;
+    height: 80px;
+    align-items: center;
 }
 
 .logo {
@@ -32,6 +30,7 @@ header {
     color: black;
     font-size: 19px;
 }
+
 
 main {
     display: flex;

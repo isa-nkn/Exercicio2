@@ -47,8 +47,7 @@ h2 {
 
 .categories {
     display: flex;
-    justify-content: space-around;
-    margin-left: 0.5rem;
+    justify-content: space-evenly;
 }
 
 .cats {

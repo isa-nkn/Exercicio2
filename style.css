@@ -97,7 +97,7 @@ h2 {
     box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.15);
     border-radius: 23px;
     justify-content: space-evenly;
-    width: 280px;
+    width: 22%;
     height: 500px;
     font-size: 13.5px;
     color: #222222;
@@ -109,7 +109,7 @@ h2 {
 }
 
 .foto-info {
-    width: 280px;
+    width: 100%;
     height: 175px;
     border-top-left-radius: 23px;
     border-top-right-radius: 23px;
@@ -183,7 +183,7 @@ h2 {
     display: flex;
     flex-direction: column;
     border-radius: 23px;
-    width: 280px;
+    width: 22%;
     height: 500px;
     font-size: 13.5px;
     color: #222222;

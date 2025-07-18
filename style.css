@@ -45,6 +45,10 @@ h2 {
     margin-left: 17px;
 }
 
+.categories {
+     display: flex;
+}
+
 .cats {
     display: inline-block;
     row-gap: 40px;

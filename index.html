@@ -5,575 +5,636 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kmais - Sua Vida Com Energia</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <div class="fundo">
+        <div class="conteudo">
+            <header>
+                    <a href="index.html">
+                            <img class="logo" src="./assets/logokmais.png" alt="Banner da Kmais"><br>
+                        </a>
+                    <form action="/search" method="GET">
+                        <input type="text" name="q" placeholder="Pesquisar eventos">
+                        <button type="submit">Pesquisar</button>
+                    </form>
 
-            <a href="index.html">
-                    <img class="logo" src="./assets/logokmais.png" alt="Banner da Kmais"><br>
-                </a>
-            <form action="/search" method="GET">
-                <input type="text" name="q" placeholder="Pesquisar eventos">
-                <button type="submit">Pesquisar</button>
-            </form>
-            <p><a class="header-redic" href="index.html">Home</a></p>
-            <p><a class="header-redic" href="Eventos.html">Todos Eventos</a></p>
-            <p><a class="header-redic" href="CriarEvento.html">Criar Evento</a></p>
-            <p><a class="header-redic" href="Resultados.html">Resultados</a></p>
-            <p><a class="header-redic" href="Entrar.html">Entrar</a></p>
-
-    </header>
-    <main>
-        <!--Cartaz-->
-        <section>
-            <a href="Eventos.html">
-                <img class="cartaz1" src="./assets/banner.png" alt="Banner da Kmais"><br>
-            </a>
-        </section>
-        <!--Principais Categorias-->
-        <section>
-            <!--Carrossel-->
-            <h2>Principais categorias</h2>
-            <div class="categories">
-                <div class="cats">
-                    <a href="Categorias.html" class="link">
-                        <img class="categorias" src="./assets/corridarua.png" alt="Banner corrida de rua">
-                        <p class="descricao">Corrida de Rua</p>
-                    </a>
+                <div class="secoes">
+                    <p><a class="header-redic" href="index.html">Home</a></p>
+                    <p><a class="header-redic" href="Eventos.html">Todos Eventos</a></p>
+                    <p><a class="header-redic" href="CriarEvento.html">Criar Evento</a></p>
+                    <p><a class="header-redic" href="Resultados.html">Resultados</a></p>
+                    <p><a class="header-redic" href="Entrar.html">Entrar</a></p>
                 </div>
 
-                <div class="cats">
-                    <a href="Categorias.html" class="link">
-                        <img class="categorias" src="./assets/ciclismo.png" alt="Banner ciclismo">
-                    <p class="descricao">Ciclismo</p>
-                </a>
+                <div class="tracinhos">
+                    <span class="material-icons">menu</span>
                 </div>
+            </header>
+            <main>
+                <!--Cartaz-->
+                <section>
+                    <div class="contem">
+                        <a href="Eventos.html">
+                            <img class="cartaz1" src="./assets/banner.png" alt="Banner da Kmais"><br>
+                        </a>
+                    </div>
+                </section>
+                <!--Principais Categorias-->
+                <section>
+                    <div class="contem">
+                        <!--Carrossel-->
+                        <h2>Principais categorias</h2>
+                        <div class="categories">
+                            <div class="cats">
+                                <a href="Categorias.html" class="link">
+                                    <img class="categorias" src="./assets/corridarua.png" alt="Banner corrida de rua">
+                                    <p class="descricao">Corrida de Rua</p>
+                                </a>
+                            </div>
 
-                <div class="cats">
-                    <a href="Categorias.html" class="link">
-                        <img class="categorias" src="./assets/todoseventos.png" alt="Banner todos os eventos">
-                        <p class="descricao">Todos Eventos</p>
-                    </a>
-                </div>
+                            <div class="cats">
+                                <a href="Categorias.html" class="link">
+                                    <img class="categorias" src="./assets/ciclismo.png" alt="Banner ciclismo">
+                                <p class="descricao">Ciclismo</p>
+                            </a>
+                            </div>
 
-                <div class="cats">
-                    <a href="Categorias.html" class="link">
-                        <img class="categorias" src="./assets/campoetrilha.png" alt="Banner campo e trilha">
-                        <p class="descricao">Campo e Trilha</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!--Corrida de rua-->
-        <section>
-            <h2>Corrida de rua</h2>
-            <!--Carrossel-->
-            <div class="carrossel">
-                <div class="blocoinfo">
-                    <img class="foto-info" src="./assets/maratona-fogo.png" alt="Cartaz da Meia Maratona do Fogo - 2025">
-                    <h3 class="textos">6° MEIA MARATONA DO FOGO - 2025</h3><br>
+                            <div class="cats">
+                                <a href="Categorias.html" class="link">
+                                    <img class="categorias" src="./assets/todoseventos.png" alt="Banner todos os eventos">
+                                    <p class="descricao">Todos Eventos</p>
+                                </a>
+                            </div>
 
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/data.png">
-                        <p class="textos">20 DE JULHO - 06:30</p>
+                            <div class="cats">
+                                <a href="Categorias.html" class="link">
+                                    <img class="categorias" src="./assets/campoetrilha.png" alt="Banner campo e trilha">
+                                    <p class="descricao">Campo e Trilha</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/modalidade.png">
-                        <p class="textos">Corrida de rua</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/local.png">
-                        <p class="textos">DOURADOS - MS</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/organizador.png">
-                        <p class="textos">Organizador: Prefeitura Municipal de Dourados - FUNED</p><br>
-                    </div>
+                </section>
+                <!--Corrida de rua-->
+                <section>
+                    <div class="contem">
+                        <h2>Corrida de rua</h2>
+                        <!--Carrossel-->
+                        <div class="carrossel">
+                            <div class="blocoinfo">
+                                <img class="foto-info" src="./assets/maratona-fogo.png" alt="Cartaz da Meia Maratona do Fogo - 2025">
+                                <h3 class="textos">6° MEIA MARATONA DO FOGO - 2025</h3><br>
 
-                    <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
-                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/data.png">
+                                    <p class="textos">20 DE JULHO - 06:30</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/modalidade.png">
+                                    <p class="textos">Corrida de rua</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/local.png">
+                                    <p class="textos">DOURADOS - MS</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/organizador.png">
+                                    <p class="textos">Organizador: Prefeitura Municipal de Dourados - FUNED</p><br>
+                                </div>
 
-                <div class="blocoinfo">
-                    <img class="foto-info" src="./assets/190-dourados.png" alt="Cartaz da 2° corrida do 3°BPM Dourados, MS">
-                    <h3 class="textos">2° CORRIDA DO 3° BPM - CIRCUITO 190 ANOS PMMS - DOURADOS MS</h3><br>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/data.png">
-                        <p class="textos">2 DE AGOSTO - 18:00</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/modalidade.png">
-                        <p class="textos">Corrida de rua</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/local.png">
-                        <p class="textos">DOURADOS - MS</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/organizador.png">
-                        <p class="textos">Organizador: PMMS - 3°BPM</p><br>
-                    </div>
-                    
-                    <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
-                </div>
+                                <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
+                            </div>
 
-                <div class="blocoinfo">
-                    <img class="foto-info" src="./assets/5km.png" alt="Cartaz corrida beneficente Fforte Fit">
-                    <h3 class="textos">1° CORRIDA BENEFICENTE FFORTE FIT</h3><br>
+                            <div class="blocoinfo">
+                                <img class="foto-info" src="./assets/190-dourados.png" alt="Cartaz da 2° corrida do 3°BPM Dourados, MS">
+                                <h3 class="textos">2° CORRIDA DO 3° BPM - CIRCUITO 190 ANOS PMMS - DOURADOS MS</h3><br>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/data.png">
+                                    <p class="textos">2 DE AGOSTO - 18:00</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/modalidade.png">
+                                    <p class="textos">Corrida de rua</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/local.png">
+                                    <p class="textos">DOURADOS - MS</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/organizador.png">
+                                    <p class="textos">Organizador: PMMS - 3°BPM</p><br>
+                                </div>
+                                
+                                <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
+                            </div>
 
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/data.png">
-                        <p class="textos">3 DE AGOSTO</p>
+                            <div class="blocoinfo">
+                                <img class="foto-info" src="./assets/5km.png" alt="Cartaz corrida beneficente Fforte Fit">
+                                <h3 class="textos">1° CORRIDA BENEFICENTE FFORTE FIT</h3><br>
+
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/data.png">
+                                    <p class="textos">3 DE AGOSTO</p>
+                                </div>
+
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/modalidade.png">
+                                    <p class="textos">Corrida de rua</p>
+                                </div>
+
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/local.png">
+                                    <p class="textos">IVINHEMA - MS</p>
+                                </div>
+
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/organizador.png">
+                                    <p class="textos">Organizador: Academia FFORTE FIT</p><br>
+                                </div>
+
+                                <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
+                            </div>
+
+                            <div class="blocoinfo">
+                                <img class="foto-info" src="./assets/bpm-tres-lagoas.png" açt="Cartaz corrida do BPM Três Lagoas">
+                                <h3 class="textos">CORRIDA E CAMINHADA DO 2° BPM de TRÊS LAGOAS MS - CIRCUITO 190 ANOS DA PMMS</h3><br>
+
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/data.png">
+                                    <p class="textos">9 DE AGOSTO - 17:00</p>
+                                </div>
+
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/modalidade.png">
+                                    <p class="textos">Corrida de rua</p>
+                                </div>
+
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/local.png">
+                                    <p class="textos">TRÊS LAGOAS - MS</p>
+                                </div>
+
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/organizador.png">
+                                    <p class="textos">Organizador: 2° BPMMS</p><br>
+                                </div>
+
+                                <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/modalidade.png">
-                        <p class="textos">Corrida de rua</p>
-                    </div>
-
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/local.png">
-                        <p class="textos">IVINHEMA - MS</p>
-                    </div>
-
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/organizador.png">
-                        <p class="textos">Organizador: Academia FFORTE FIT</p><br>
-                    </div>
-
-                    <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
-                </div>
-
-                <div class="blocoinfo">
-                    <img class="foto-info" src="./assets/bpm-tres-lagoas.png" açt="Cartaz corrida do BPM Três Lagoas">
-                    <h3 class="textos">CORRIDA E CAMINHADA DO 2° BPM de TRÊS LAGOAS MS - CIRCUITO 190 ANOS DA PMMS</h3><br>
-
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/data.png">
-                        <p class="textos">9 DE AGOSTO - 17:00</p>
-                    </div>
-
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/modalidade.png">
-                        <p class="textos">Corrida de rua</p>
-                    </div>
-
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/local.png">
-                        <p class="textos">TRÊS LAGOAS - MS</p>
-                    </div>
-
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/organizador.png">
-                        <p class="textos">Organizador: 2° BPMMS</p><br>
-                    </div>
-
-                    <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
-                </div>
-            </div>
-           
-        </section>
-        <!--Ciclismo-->
-        <section class="cinzas">
-            <h2>Ciclismo</h2>
-            
-            <div class="carrossel">
-
-                <div class="blocoinfo">
-                    <img class="foto-info" src="./assets/azmtb.png" alt="AZMTB - Maracaju 2025">
-                    <h3 class="textos">AZMTB - MARACAJU 2025</h3><br>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/data.png">
-                        <p class="textos">13 DE JULHO - 07:00</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/modalidade.png">
-                        <p class="textos">Bike</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/local.png">
-                        <p class="textos">MARACAJU - MS</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/organizador.png">
-                        <p class="textos">Organizador: AZ Eventos Esportivos</p><br>
-                    </div>
-                    
-                    <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
-                </div>
-
-                <div class="blocoinfo">
-                    <img class="foto-info" src="./assets/costa-rica.png" alt="Cartaz da Meia Maratona do Fogo - 2025">
-                    <h3 class="textos">CIRCUITO MTB BRASIL - COSTA RICA 2025</h3><br>
+                </section>
+                <!--Ciclismo-->
+                <section class="cinzas">
+                    <div class="contem-cinza">
+                        <h2>Ciclismo</h2>
                         
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/data.png">
-                        <p class="textos">27 DE JULHO - 07:30</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/modalidade.png">
-                        <p class="textos">Bike</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/local.png">
-                        <p class="textos">COSTA RICA - MS</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/organizador.png">
-                        <p class="textos">Organizador: SYNI Produções e Eventos</p><br>
-                    </div>
+                        <div class="carrossel">
 
-                    <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
-                </div>
+                            <div class="blocoinfo">
+                                <img class="foto-info" src="./assets/azmtb.png" alt="AZMTB - Maracaju 2025">
+                                <h3 class="textos">AZMTB - MARACAJU 2025</h3><br>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/data.png">
+                                    <p class="textos">13 DE JULHO - 07:00</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/modalidade.png">
+                                    <p class="textos">Bike</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/local.png">
+                                    <p class="textos">MARACAJU - MS</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/organizador.png">
+                                    <p class="textos">Organizador: AZ Eventos Esportivos</p><br>
+                                </div>
+                                
+                                <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
+                            </div>
 
-                <div class="blocoinfo">
-                    <img class="foto-info" src="./assets/azmtb-bonito.png" alt="AZMTB - Bonito 2025">
-                    <h3 class="textos">AZMTB - BONITO 2025</h3><br>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/data.png">
-                        <p class="textos">14 DE DEZEMBRO - 07:00</p>
+                            <div class="blocoinfo">
+                                <img class="foto-info" src="./assets/costa-rica.png" alt="Cartaz da Meia Maratona do Fogo - 2025">
+                                <h3 class="textos">CIRCUITO MTB BRASIL - COSTA RICA 2025</h3><br>
+                                    
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/data.png">
+                                    <p class="textos">27 DE JULHO - 07:30</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/modalidade.png">
+                                    <p class="textos">Bike</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/local.png">
+                                    <p class="textos">COSTA RICA - MS</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/organizador.png">
+                                    <p class="textos">Organizador: SYNI Produções e Eventos</p><br>
+                                </div>
+
+                                <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
+                            </div>
+
+                            <div class="blocoinfo">
+                                <img class="foto-info" src="./assets/azmtb-bonito.png" alt="AZMTB - Bonito 2025">
+                                <h3 class="textos">AZMTB - BONITO 2025</h3><br>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/data.png">
+                                    <p class="textos">14 DE DEZEMBRO - 07:00</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/modalidade.png">
+                                    <p class="textos">Bike</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/local.png">
+                                    <p class="textos">BONITO - MS</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/organizador.png">
+                                    <p class="textos">Organizador: AZ Eventos Esportivos</p><br>
+                                </div>
+                                
+                                <a  href="Categorias.html" class="meu-botao-inativo">Inscrições em breve</a>
+                            </div>
+
+                            <div class="continuar-evento">
+                                <img class="seta" src="./assets/seta.png">
+                                <p class="veja">Veja todos os eventos</p>
+                                <a href="Categorias.html" class="clique">Clique aqui</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/modalidade.png">
-                        <p class="textos">Bike</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/local.png">
-                        <p class="textos">BONITO - MS</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/organizador.png">
-                        <p class="textos">Organizador: AZ Eventos Esportivos</p><br>
+                </section>
+                <!--Corrida de trilha-->
+                <section>
+                    <div class="contem">
+                        <h2>Corrida de trilha</h2>
+                        <div class="trilha">
+                            <img class="img-trilha" src="./assets/piraputanga.png" alt="Pantanal Ultra">
+
+                            <div class="conteudo-trilha">
+                                <h3>PANTANAL ULTRA 2025</h3><br>
+
+                                <div class="details">
+                                    <div class="infos2">
+                                        <img class="fotos2" src="./assets/data.png">
+                                        <p class="textos2">16 DE AGOSTO - 22:00</p>
+                                    </div>
+
+                                    <div class="infos2">
+                                        <img class="fotos2" src="./assets/modalidade.png">
+                                        <p class="textos2">Corrida de trilha</p>
+                                    </div>
+
+                                    <div class="infos2">
+                                        <img class="fotos2" src="./assets/local.png">
+                                        <p class="textos2">AQUIDAUANA - MS</p>
+                                    </div>
+
+                                    <div class="infos2">
+                                        <img class="fotos2" src="./assets/organizador.png">
+                                        <p class="textos2">Organizador: VO2 Corrida de Rua</p>
+                                    </div><br>
+
+                                    <a href="Categorias.html" class="botao-ativo">Inscrições abertas</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
-                    <a  href="Categorias.html" class="meu-botao-inativo">Inscrições em breve</a>
-                </div>
+                    <div class="trilhas">
+                        <div class="carrossel">
+                            <div class="blocoinfo2">
+                                    <img class="foto-info2" src="./assets/piraputanga.png" alt="Pantanal Ultra">
+                                    <h3 class="textos2">PANTANAL ULTRA 2025</h3><br>
 
-                <div class="continuar-evento">
-                    <img class="seta" src="./assets/seta.png">
-                    <p class="veja">Veja todos os eventos</p>
-                    <a href="Categorias.html" class="clique">Clique aqui</a>
-                </div>
-            </div>
-        </section>
-        <!--Corrida de trilha-->
-        <section>
-            <h2>Corrida de trilha</h2>
-            <div class="trilha">
-                <img class="img-trilha" src="./assets/piraputanga.png" alt="Pantanal Ultra">
+                                    <div class="informacoes2">
+                                        <img class="foto-pqn" src="./assets/data.png">
+                                        <p class="textos">16 DE AGOSTO - 22:00</p>
+                                    </div>
+                                    <div class="informacoes2">
+                                        <img class="foto-pqn" src="./assets/modalidade.png">
+                                        <p class="textos2">Corrida de trilha</p>
+                                    </div>
+                                    <div class="informacoes2">
+                                        <img class="foto-pqn" src="./assets/local.png">
+                                        <p class="textos2">AQUIDAUANA - MS</p>
+                                    </div>
+                                    <div class="informacoes2">
+                                        <img class="foto-pqn2" src="./assets/organizador.png">
+                                        <p class="textos2">Organizador: VO2 Corrida de Rua</p><br>
+                                    </div>
 
-                <div class="conteudo-trilha">
-                    <h3>PANTANAL ULTRA 2025</h3><br>
+                                    <a  href="Categorias.html" class="meu-botao-ativo2">Inscrições abertas</a>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+                <!--Outros-->
+                <section class="cinzas">
+                    <div class="contem-cinza">
+                        <h2>Outros</h2>
+                        
+                        <div class="carrossel">
 
-                    <div class="details">
-                        <div class="infos2">
-                            <img class="fotos2" src="./assets/data.png">
-                            <p class="textos2">16 DE AGOSTO - 22:00</p>
+                            <div class="blocoinfo">
+                                <img class="foto-info" src="./assets/circulo-militar.png" alt="2° Festival de triatlo Campo Grande, MS">
+                                <h3 class="textos">2° FESTIVAL DE TRIATHLON - CAMPO GRANDE/MS</h3><br>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/data.png">
+                                    <p class="textos">17 DE AGOSTO - 04:00</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/modalidade.png">
+                                    <p class="textos">Outros</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/local.png">
+                                    <p class="textos">CAMPO GRANDE - MS</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/organizador.png">
+                                    <p class="textos">Organizador: CÍRCULO MILITAR DE CAMPO GRANDE</p><br>
+                                </div>
+                                
+                                <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
+                            </div>
+
+                            <div class="blocoinfo">
+                                <img class="foto-info" src="./assets/extreme-running.png" alt="Extreme Running Maracaju">
+                                <h3 class="textos">5° EXTREME RUNNING MARACAJU - DESAFIO FENDT 2025</h3><br>
+                                    
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/data.png">
+                                    <p class="textos">31 DE AGOSTO - 07:30</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/modalidade.png">
+                                    <p class="textos">Corrida de aventura</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/local.png">
+                                    <p class="textos">MARACAJU - MS</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/organizador.png">
+                                    <p class="textos">Organizador: Prefeitura de Maracaju / Secretaria Municipal de Esporte</p><br>
+                                </div>
+
+                                <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
+                            </div>
+
+                            <div class="blocoinfo">
+                                <img class="foto-info" src="./assets/cê-tá-doido.png" alt="Cê tá doido!">
+                                <h3 class="textos">1° CÊ TÁ DOIDO! - DUATHLON ENDURANCE</h3><br>
+                                    
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/data.png">
+                                    <p class="textos">7 DE SETEMBRO - 06:30</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/modalidade.png">
+                                    <p class="textos">Outros</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/local.png">
+                                    <p class="textos">AQUIDAUANA - MS</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/organizador.png">
+                                    <p class="textos">Organizador: STUDIO MOVIMENTE</p><br>
+                                </div>
+
+                                <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
+                            </div>
+
+                            <div class="blocoinfo">
+                                <img class="foto-info" src="./assets/bope.png" alt="Corrida do BOPE">
+                                <h3 class="textos">CORRIDA DO BOPE - CIRCUITO 190 ANOS / PMMS</h3><br>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/data.png">
+                                    <p class="textos">23 DE NOVEMBRO - 07:00</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/modalidade.png">
+                                    <p class="textos">Corrida de aventura</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/local.png">
+                                    <p class="textos">CAMPO GRANDE - MS</p>
+                                </div>
+                                <div class="informacoes">
+                                    <img class="foto-pqn" src="./assets/organizador.png">
+                                    <p class="textos">Organizador: PMMS</p><br>
+                                </div>
+                                
+                                <a  href="Categorias.html" class="meu-botao-inativo">Inscrições em breve</a>
+                            </div>
+                    </div>
+                </section>
+                <!--Cartaz vendas-->
+                <section>
+                    <div class="contem">
+                        <a href="CriarEvento.html">
+                            <img class="cartaz2" src="./assets/bannervendas.png" alt="Cartaz de vendas da Kmais"><br>
+                        </a>
+                    </div>
+                </section>
+                <!--Propagandas-->
+                <section>
+                    <div class="contem">
+                        <div class="container">
+                            <div class="bloquinho">
+                                <img class="icone-promo" src="./assets/foguete.png">
+                                <p>Crie, gerencie e monitore os dados dos participantes e o desempenho dos seus eventos.</p>
+                            </div>
+
+                            <div class="bloquinho">
+                                <img class="icone-promo" src="./assets/chave.png">
+                                <p>Autonomia para criar seus eventos de forma simples e rápida, e as melhores funcionalidades do mercado.</p>
+                            </div>
+
+                            <div class="bloquinho">
+                                <img class="icone-promo" src="./assets/celular.png">
+                                <p>Acompanhe os dados do seu evento de onde estiver com o nosso aplicativo mobile, a melhor experiencia de gerenciamento de evento.</p>
+                            </div>
+
+                            <div class="bloquinho">
+                                <img class="icone-promo" src="./assets/medalha.png">
+                                <p>Reduza seus custos distribuindo certificados com nosso selo de autenticidade diretamente na Kmais!</p>
+                            </div>
+
+                            <div class="bloquinho">
+                                <img class="icone-promo" src="./assets/pessoas.png">
+                                <p>Conheça melhor o seu público criando um formulário de inscrição personalizado, tendo assim, informações precisas sobre seus participantes.</p>
+                            </div>
+
+                            <div class="bloquinho">
+                                <img class="icone-promo" src="./assets/ingresso.png">
+                                <p>Vendas de ingressos e inscrições diretamente na plataforma. Acompanhe detalhadamente com nossos relatórios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--Avaliações-->
+                <section class="cinzas">
+                    <div class="contem-cinza">
+                        <div class="avaliacao">
+                            <div class="textinho">
+                                <h2>A Kmais é muito mais do que uma plataforma de eventos!</h2>
+                                <p>Veja o que nossos clientes dizem dos nossos serviços!</p><br>
+                            </div>
+
+                            <div class="avaliacoes">
+                                <div class="bloco">
+                                    <img class="perfil" src="./assets/aude perfil.png">
+                                    <div class="juntos">
+                                        <a href="https://www.instagram.com/audelessonier/" target="_blank"><img class="insta" src="./assets/insta.png">
+                                        </a>
+                                        <h3 class="nome">Aude Lessonier</h3>
+                                    </div>
+                                    <p class="fala"><i>"Você não para de correr porque envelhece. Você envelhece porque para de correr. Uma corrida pode mudar o seu dia, muitas corridas podem mudar sua vida."</i></p>
+                                    <img class="estrelas" src="./assets/estrelas.png">
+                                </div>
+
+                                <div class="bloco">
+                                    <img class="perfil" src="./assets/tati perfil.png">
+                                    <div class="juntos">
+                                        <a href="https://www.instagram.com/tatibergamosantin/" target="_blank
+                                        "><img class="insta" src="./assets/insta.png">
+                                        </a>
+                                        <h3 class="nome">Tati Bergamo</h3>
+                                    </div>
+                                    <p class="fala"><i>"Nosso corpo é a nossa casa e precisamos que ele seja habitável até os últimos dias. E a atividade física é grande aliada pelo bem da nossa morada."</i></p>
+                                    <img class="estrelas" src="./assets/estrelas.png">
+                                </div>
+
+                                <div class="bloco">
+                                    <img class="perfil" src="./assets/atilla perfil.png">
+                                    <div class="juntos">
+                                        <a href="https://www.instagram.com/corridasoalegria/" target="_blank"><img class="insta" src="./assets/insta.png">
+                                        </a>
+                                        <h3 class="nome">Átilla Eugênio</h3>
+                                    </div>
+                                    <p class="fala"><i>"Acompanhando de perto tantas corridas de rua, trilhas e pedais, vejo o quanto as pessoas se transformam em sua melhores versões através da prática esportiva, vivendo com mais alegria."</i></p>
+                                    <img class="estrelas" src="./assets/estrelas.png">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </section>
+                <!--Dúvidas frequentes-->
+                <section>
+                    <div class="contem">
+                        <div class="doubts">
+                            <h2>Dúvidas frequentes</h2><br>
+                            <details>
+                                <summary>Não consigo recuperar minha senha ou meu cadastro.</summary><br>
+                                <p>Em caso de perda da senha ou dificuldade para recuperá-la, entre em contato com o atendimento Whatsapp e informe o seu e-mail de login. O atendimento pode levar até 24 horas para a resposta.</p><br>
+                            </details><br>
+                            <details>
+                                <summary>Paguei o meu boleto mas o evento ainda aparece como pagamento "Pendente".</summary><br>
+                                <p>Os pagamentos em boleto podem levar até 48h úteis para serem compensados pelos bancos e confirmados como "Pago" no status das compras do atleta. A confirmação é feita automaticamente pelos bancos, após a compensação.</p><br>
+                            </details><br>
+                            <details>
+                                <summary>Meu boleto está dando mensagem de erro quando tento realizar o pagamento.</summary><br>
+                                <p>Caso o seu pagamento com boleto esteja dando erro, aguarde 30 minutos e tente realizar o pagamento. Os boletos são documentos emitidos entre bancos e validados pelo Banco Central. Pode, eventualmente, levar alguns minutos para que o documento seja validado para o pagamento.</p><br>
+                            </details><br>
+
+                            <div class="texto">
+                            <input type="checkbox" id="vermais">
+                            
+                            <div class="conteudo-escondido">
+                                <details>
+                                <summary>Meu pagamento PIX está dando mensagem de erro.</summary><br>
+                                <p>
+                                    Caso esteja recebendo mensagem no pagamento com PIX, verifique se todos os dígitos do código "Copia e Cola" foram colados no App do seu banco; Verifique se foi acrescentado "https://" no início do código. Se sim, é necessário excluí-lo; Verifique se o código está sendo colado na área correta do App do banco. A área "Chave Pix" não é a área "Copia e Cola".
+                                </p><br>
+                                </details><br>
+                                
+                                <details>
+                                <summary>Meu pagamento com cartão fica processando e não finaliza.</summary><br>
+                                <p>
+                                    Caso o seu pagamento com cartão de crédito não esteja concluindo, verifique se o mês e ano de vencimento estão digitados no formato mm/20aa (com 2 dígitos no mês e 4 dígitos no ano).
+                                </p><br>
+                                </details><br>
+
+                                <details>
+                                    <summary>Como fazer minha inscrição utilizando VOUCHER/CÓDIGO de descontos?</summary><br>
+                                    <p>Os códigos de descontos são fornecidos exclusivamente pelos organizadores do evento. Para utilizá-lo é necessário que o atleta tenha o cadastro completo na plataforma Kmais (Você pode acessar as orientações do cadastro pelo FAQ do site www.kmaisclube.com.br). Após fazer o login com o email de senha cadastrados na plataforma Kmais, o atleta deve escolher o evento desejado. Em seguida, escolher a modalidade, tamanho do kit e inserir o código (com 8 dígitos alfanuméricos) no local demarcado para isso. Depois, basta selecionar a opção de pagamento. Para a opção “Comprar para um amigo”, utilizando o VOUCHER/CÓDIGO, é necessário que o atleta utilize o computador por questões de segurança de dados de terceiros (LGPD). Qualquer dúvida, basta enviar mensagem para o Whatsapp 67 98112 9003.</p><br>
+                                    </details><br>
+                            </div>
+                            <div class="ver">
+                                <label for="vermais" class="botao">Ver mais</label>
+                            </div>
+                            </div>
                         </div>
 
-                        <div class="infos2">
-                            <img class="fotos2" src="./assets/modalidade.png">
-                            <p class="textos2">Corrida de trilha</p>
-                        </div>
+                        <!--<details>
+                            <details>
+                                <summary>Meu pagamento PIX está dando mensagem de erro.</summary>
+                                <p>Caso esteja recebendo mensagem no pagamento com PIX, verifique se todos os dígitos do código "Copia e Cola" foram colados no App do seu banco; Verifique se foi acrescentado "https://" no início do código. Se sim, é necessário excluí-lo; Verifique se o código está sendo colado na área correta do App do banco. A área "Chave Pix" não é a área "Copia e Cola".</p>
+                            </details><br>
 
-                        <div class="infos2">
-                            <img class="fotos2" src="./assets/local.png">
-                            <p class="textos2">AQUIDAUANA - MS</p>
-                        </div>
+                            <details>
+                                <summary>Meu pagamento com cartão fica processando e não finaliza.</summary>
+                                <p>Caso o seu pagamento com cartão de crédito não esteja concluindo, verifique se o mês e ano de vencimento estão digitados no formato mm/20aa (com 2 dígitos no mês e 4 dígitos no ano).</p>
+                            </details><br>
 
-                        <div class="infos2">
-                            <img class="fotos2" src="./assets/organizador.png">
-                            <p class="textos2">Organizador: VO2 Corrida de Rua</p>
+                            <details>
+                                <summary>Como fazer minha inscrição utilizando VOUCHER/CÓDIGO de descontos?</summary>
+                                <p>Os códigos de descontos são fornecidos exclusivamente pelos organizadores do evento. Para utilizá-lo é necessário que o atleta tenha o cadastro completo na plataforma Kmais (Você pode acessar as orientações do cadastro pelo FAQ do site www.kmaisclube.com.br). Após fazer o login com o email de senha cadastrados na plataforma Kmais, o atleta deve escolher o evento desejado. Em seguida, escolher a modalidade, tamanho do kit e inserir o código (com 8 dígitos alfanuméricos) no local demarcado para isso. Depois, basta selecionar a opção de pagamento. Para a opção “Comprar para um amigo”, utilizando o VOUCHER/CÓDIGO, é necessário que o atleta utilize o computador por questões de segurança de dados de terceiros (LGPD). Qualquer dúvida, basta enviar mensagem para o Whatsapp 67 98112 9003.</p>
+                            </details>-->
+                        </details>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="contem-footer">
+                    <div class="footer-geral">
+                        <div class="colunas">
+                            <div class="coluna">
+                                <h2 class="kmais">Kmais</h2>
+                                <a href="https://www.reclameaqui.com.br/empresa/kmais-clube/?utm_source=referral&utm_medium=embbed&utm_campaign=ra_verificada&utm_term=vertical" target="_blank">
+                                    <img class="reclame-aqui" src="./assets/reclame.png" alt="selo de veificação Reclame Aqui">
+                                </a>
+                                <p class="kmais-footer">Siga Kmais nas Redes Sociais</p>
+                            </div>
+                            <div class="coluna">
+                                <h2>Sobre a Kmais</h2>
+                                <p><a href="APlataforma.html">A plataforma</a></p>
+                            </div>
+                            <div class="coluna">
+                                <h2>Suporte</h2>
+                                <p><a href="https://api.whatsapp.com/send/?phone=%2B5567981129003..." target="_blank">Fale Conosco</a></p>
+                            </div>
+                            <div class="coluna">
+                                <h2>Termos Legais</h2>
+                                <p><a href="TermosUso.html">Termos de Uso</a></p>
+                                <p><a href="TermosCompra.html">Termos de Compra</a></p>
+                                <p><a href="PoliticaPriv.html">Política de Privacidade</a></p>
+                                <p><a href="PoliticaCookies.html">Política de Cookies</a></p>
+                            </div>
+                            <div class="coluna">
+                                <h2>Políticas</h2>
+                                <p><a href="PrecosDesc.html">Preços e Descontos</a></p>
+                                <p><a href="TxCom.html">Taxa de Comodidade</a></p>
+                            </div>
                         </div><br>
 
-                        <a href="Categorias.html" class="botao-ativo">Inscrições abertas</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Outros-->
-        <section class="cinzas">
-            <h2>Outros</h2>
-            
-            <div class="carrossel">
-
-                <div class="blocoinfo">
-                    <img class="foto-info" src="./assets/circulo-militar.png" alt="2° Festival de triatlo Campo Grande, MS">
-                    <h3 class="textos">2° FESTIVAL DE TRIATHLON - CAMPO GRANDE/MS</h3><br>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/data.png">
-                        <p class="textos">17 DE AGOSTO - 04:00</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/modalidade.png">
-                        <p class="textos">Outros</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/local.png">
-                        <p class="textos">CAMPO GRANDE - MS</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/organizador.png">
-                        <p class="textos">Organizador: CÍRCULO MILITAR DE CAMPO GRANDE</p><br>
-                    </div>
-                    
-                    <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
-                </div>
-
-                <div class="blocoinfo">
-                    <img class="foto-info" src="./assets/extreme-running.png" alt="Extreme Running Maracaju">
-                    <h3 class="textos">5° EXTREME RUNNING MARACAJU - DESAFIO FENDT 2025</h3><br>
-                        
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/data.png">
-                        <p class="textos">31 DE AGOSTO - 07:30</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/modalidade.png">
-                        <p class="textos">Corrida de aventura</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/local.png">
-                        <p class="textos">MARACAJU - MS</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/organizador.png">
-                        <p class="textos">Organizador: Prefeitura de Maracaju / Secretaria Municipal de Esporte</p><br>
-                    </div>
-
-                    <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
-                </div>
-
-                <div class="blocoinfo">
-                    <img class="foto-info" src="./assets/cê-tá-doido.png" alt="Cê tá doido!">
-                    <h3 class="textos">1° CÊ TÁ DOIDO! - DUATHLON ENDURANCE</h3><br>
-                        
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/data.png">
-                        <p class="textos">7 DE SETEMBRO - 06:30</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/modalidade.png">
-                        <p class="textos">Outros</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/local.png">
-                        <p class="textos">AQUIDAUANA - MS</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/organizador.png">
-                        <p class="textos">Organizador: STUDIO MOVIMENTE</p><br>
-                    </div>
-
-                    <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
-                </div>
-
-                <div class="blocoinfo">
-                    <img class="foto-info" src="./assets/bope.png" alt="Corrida do BOPE">
-                    <h3 class="textos">CORRIDA DO BOPE - CIRCUITO 190 ANOS / PMMS</h3><br>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/data.png">
-                        <p class="textos">23 DE NOVEMBRO - 07:00</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/modalidade.png">
-                        <p class="textos">Corrida de aventura</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/local.png">
-                        <p class="textos">CAMPO GRANDE - MS</p>
-                    </div>
-                    <div class="informacoes">
-                        <img class="foto-pqn" src="./assets/organizador.png">
-                        <p class="textos">Organizador: PMMS</p><br>
-                    </div>
-                    
-                    <a  href="Categorias.html" class="meu-botao-inativo">Inscrições em breve</a>
-                </div>
-        </section>
-        <!--Cartaz vendas-->
-        <section>
-            <a href="CriarEvento.html">
-                <img class="cartaz2" src="./assets/bannervendas.png" alt="Cartaz de vendas da Kmais"><br>
-            </a>
-        </section>
-        <!--Propagandas pt. 1-->
-        <section>
-            <div class="container">
-                <div class="bloquinho">
-                    <img class="icone-promo" src="./assets/foguete.png">
-                    <p>Crie, gerencie e monitore os dados dos participantes e o desempenho dos seus eventos.</p>
-                </div>
-
-                <div class="bloquinho">
-                    <img class="icone-promo" src="./assets/chave.png">
-                    <p>Autonomia para criar seus eventos de forma simples e rápida, e as melhores funcionalidades do mercado.</p>
-                </div>
-
-                <div class="bloquinho">
-                    <img class="icone-promo" src="./assets/celular.png">
-                    <p>Acompanhe os dados do seu evento de onde estiver com o nosso aplicativo mobile, a melhor experiencia de gerenciamento de evento.</p>
-                </div>
-
-                <div class="bloquinho">
-                    <img class="icone-promo" src="./assets/medalha.png">
-                    <p>Reduza seus custos distribuindo certificados com nosso selo de autenticidade diretamente na Kmais!</p>
-                </div>
-
-                <div class="bloquinho">
-                    <img class="icone-promo" src="./assets/pessoas.png">
-                    <p>Conheça melhor o seu público criando um formulário de inscrição personalizado, tendo assim, informações precisas sobre seus participantes.</p>
-                </div>
-
-                <div class="bloquinho">
-                    <img class="icone-promo" src="./assets/ingresso.png">
-                    <p>Vendas de ingressos e inscrições diretamente na plataforma. Acompanhe detalhadamente com nossos relatórios.</p>
-                </div>
-            </div>
-        </section>
-        <!--Avaliações-->
-        <section class="cinzas">
-            <div class="avaliacao">
-                <div class="textinho">
-                    <h2>A Kmais é muito mais do que uma plataforma de eventos!</h2>
-                    <p>Veja o que nossos clientes dizem dos nossos serviços!</p><br>
-                </div>
-
-                <div class="avaliacoes">
-                    <div class="bloco">
-                        <img class="perfil" src="./assets/aude perfil.png">
-                        <div class="juntos">
-                            <a href="https://www.instagram.com/audelessonier/" target="_blank"><img class="insta" src="./assets/insta.png">
-                            </a>
-                            <h3 class="nome">Aude Lessonier</h3>
+                        <hr class="linha-rodape">
+                        <div class="direitos">
+                            <p>&copy 2025 KMAIS. Todos os direitos reservados · CNPJ: 45.952.508/0001-28</p>
                         </div>
-                        <p class="fala"><i>"Você não para de correr porque envelhece. Você envelhece porque para de correr. Uma corrida pode mudar o seu dia, muitas corridas podem mudar sua vida."</i></p>
-                        <img class="estrelas" src="./assets/estrelas.png">
-                    </div>
-
-                    <div class="bloco">
-                        <img class="perfil" src="./assets/tati perfil.png">
-                        <div class="juntos">
-                            <a href="https://www.instagram.com/tatibergamosantin/" target="_blank
-                            "><img class="insta" src="./assets/insta.png">
-                            </a>
-                            <h3 class="nome">Tati Bergamo</h3>
-                        </div>
-                        <p class="fala"><i>"Nosso corpo é a nossa casa e precisamos que ele seja habitável até os últimos dias. E a atividade física é grande aliada pelo bem da nossa morada."</i></p>
-                        <img class="estrelas" src="./assets/estrelas.png">
-                    </div>
-
-                    <div class="bloco">
-                        <img class="perfil" src="./assets/atilla perfil.png">
-                        <div class="juntos">
-                            <a href="https://www.instagram.com/corridasoalegria/" target="_blank"><img class="insta" src="./assets/insta.png">
-                            </a>
-                            <h3 class="nome">Átilla Eugênio</h3>
-                        </div>
-                        <p class="fala"><i>"Acompanhando de perto tantas corridas de rua, trilhas e pedais, vejo o quanto as pessoas se transformam em sua melhores versões através da prática esportiva, vivendo com mais alegria."</i></p>
-                        <img class="estrelas" src="./assets/estrelas.png">
                     </div>
                 </div>
-            </div> 
-        </section>
-        <!--Dúvidas frequentes-->
-        <section>
-            <h2>Dúvidas frequentes</h2><br>
-            <details>
-                <summary>Não consigo recuperar minha senha ou meu cadastro.</summary><br>
-                <p>Em caso de perda da senha ou dificuldade para recuperá-la, entre em contato com o atendimento Whatsapp e informe o seu e-mail de login. O atendimento pode levar até 24 horas para a resposta.</p><br>
-            </details><br>
-            <details>
-                <summary>Paguei o meu boleto mas o evento ainda aparece como pagamento "Pendente".</summary><br>
-                <p>Os pagamentos em boleto podem levar até 48h úteis para serem compensados pelos bancos e confirmados como "Pago" no status das compras do atleta. A confirmação é feita automaticamente pelos bancos, após a compensação.</p><br>
-            </details><br>
-            <details>
-                <summary>Meu boleto está dando mensagem de erro quando tento realizar o pagamento.</summary><br>
-                <p>Caso o seu pagamento com boleto esteja dando erro, aguarde 30 minutos e tente realizar o pagamento. Os boletos são documentos emitidos entre bancos e validados pelo Banco Central. Pode, eventualmente, levar alguns minutos para que o documento seja validado para o pagamento.</p><br>
-            </details><br>
-
-            <div class="texto">
-            <input type="checkbox" id="vermais">
-            
-            <div class="conteudo-escondido">
-                <details>
-                <summary>Meu pagamento PIX está dando mensagem de erro.</summary><br>
-                <p>
-                    Caso esteja recebendo mensagem no pagamento com PIX, verifique se todos os dígitos do código "Copia e Cola" foram colados no App do seu banco; Verifique se foi acrescentado "https://" no início do código. Se sim, é necessário excluí-lo; Verifique se o código está sendo colado na área correta do App do banco. A área "Chave Pix" não é a área "Copia e Cola".
-                </p><br>
-                </details><br>
-                
-                <details>
-                <summary>Meu pagamento com cartão fica processando e não finaliza.</summary><br>
-                <p>
-                    Caso o seu pagamento com cartão de crédito não esteja concluindo, verifique se o mês e ano de vencimento estão digitados no formato mm/20aa (com 2 dígitos no mês e 4 dígitos no ano).
-                </p><br>
-                </details><br>
-
-                <details>
-                    <summary>Como fazer minha inscrição utilizando VOUCHER/CÓDIGO de descontos?</summary><br>
-                    <p>Os códigos de descontos são fornecidos exclusivamente pelos organizadores do evento. Para utilizá-lo é necessário que o atleta tenha o cadastro completo na plataforma Kmais (Você pode acessar as orientações do cadastro pelo FAQ do site www.kmaisclube.com.br). Após fazer o login com o email de senha cadastrados na plataforma Kmais, o atleta deve escolher o evento desejado. Em seguida, escolher a modalidade, tamanho do kit e inserir o código (com 8 dígitos alfanuméricos) no local demarcado para isso. Depois, basta selecionar a opção de pagamento. Para a opção “Comprar para um amigo”, utilizando o VOUCHER/CÓDIGO, é necessário que o atleta utilize o computador por questões de segurança de dados de terceiros (LGPD). Qualquer dúvida, basta enviar mensagem para o Whatsapp 67 98112 9003.</p><br>
-                    </details><br>
-            </div>
-            <div class="ver">
-                <label for="vermais" class="botao">Ver mais</label>
-            </div>
-            </div>
-
-            <!--<details>
-                <details>
-                    <summary>Meu pagamento PIX está dando mensagem de erro.</summary>
-                    <p>Caso esteja recebendo mensagem no pagamento com PIX, verifique se todos os dígitos do código "Copia e Cola" foram colados no App do seu banco; Verifique se foi acrescentado "https://" no início do código. Se sim, é necessário excluí-lo; Verifique se o código está sendo colado na área correta do App do banco. A área "Chave Pix" não é a área "Copia e Cola".</p>
-                </details><br>
-
-                <details>
-                    <summary>Meu pagamento com cartão fica processando e não finaliza.</summary>
-                    <p>Caso o seu pagamento com cartão de crédito não esteja concluindo, verifique se o mês e ano de vencimento estão digitados no formato mm/20aa (com 2 dígitos no mês e 4 dígitos no ano).</p>
-                </details><br>
-
-                <details>
-                    <summary>Como fazer minha inscrição utilizando VOUCHER/CÓDIGO de descontos?</summary>
-                    <p>Os códigos de descontos são fornecidos exclusivamente pelos organizadores do evento. Para utilizá-lo é necessário que o atleta tenha o cadastro completo na plataforma Kmais (Você pode acessar as orientações do cadastro pelo FAQ do site www.kmaisclube.com.br). Após fazer o login com o email de senha cadastrados na plataforma Kmais, o atleta deve escolher o evento desejado. Em seguida, escolher a modalidade, tamanho do kit e inserir o código (com 8 dígitos alfanuméricos) no local demarcado para isso. Depois, basta selecionar a opção de pagamento. Para a opção “Comprar para um amigo”, utilizando o VOUCHER/CÓDIGO, é necessário que o atleta utilize o computador por questões de segurança de dados de terceiros (LGPD). Qualquer dúvida, basta enviar mensagem para o Whatsapp 67 98112 9003.</p>
-                </details>-->
-            </details>
-        </section>
-    </main>
-<footer>
-    <div class="footer-geral">
-        <div class="colunas">
-            <div class="coluna">
-                <h2 class="kmais">Kmais</h2>
-                <a href="https://www.reclameaqui.com.br/empresa/kmais-clube/?utm_source=referral&utm_medium=embbed&utm_campaign=ra_verificada&utm_term=vertical" target="_blank">
-                    <img class="reclame-aqui" src="./assets/reclame.png" alt="selo de veificação Reclame Aqui">
-                </a>
-                <p class="kmais-footer">Siga Kmais nas Redes Sociais</p>
-            </div>
-            <div class="coluna">
-                <h2>Sobre a Kmais</h2>
-                <p><a href="APlataforma.html">A plataforma</a></p>
-            </div>
-            <div class="coluna">
-                <h2>Suporte</h2>
-                <p><a href="https://api.whatsapp.com/send/?phone=%2B5567981129003..." target="_blank">Fale Conosco</a></p>
-            </div>
-            <div class="coluna">
-                <h2>Termos Legais</h2>
-                <p><a href="TermosUso.html">Termos de Uso</a></p>
-                <p><a href="TermosCompra.html">Termos de Compra</a></p>
-                <p><a href="PoliticaPriv.html">Política de Privacidade</a></p>
-                <p><a href="PoliticaCookies.html">Política de Cookies</a></p>
-            </div>
-            <div class="coluna">
-                <h2>Políticas</h2>
-                <p><a href="PrecosDesc.html">Preços e Descontos</a></p>
-                <p><a href="TxCom.html">Taxa de Comodidade</a></p>
-            </div>
-        </div><br>
-
-        <hr class="linha-rodape">
-        <div class="direitos">
-            <p>&copy 2025 KMAIS. Todos os direitos reservados · CNPJ: 45.952.508/0001-28</p>
+            </footer>
         </div>
     </div>
-</footer>
 </body>
 </html>

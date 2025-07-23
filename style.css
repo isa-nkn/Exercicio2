@@ -14,10 +14,45 @@ body {
 
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
     height: 80px;
     align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.tracinhos {
+    display: none;
+}
+
+.secoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+section {
+    width: 100%;
+}
+
+section .contem {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+section .contem-cinza {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+section .contem-footer {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 1.5rem;
 }
 
 .logo {
@@ -39,18 +74,17 @@ main {
 }
 
 h2 {
-    padding: 2rem 0 0 2rem;
     font-size: 25px;
-    margin-left: 17px;
 }
 
 .categories {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .cats {
     display: flex;
+    justify-content: space-between;
 }
 
 .descricao {
@@ -64,9 +98,10 @@ h2 {
 
 .categorias {
     display: flex;
-    width: 95%;
+    width: 100%;
     height: 140px;
     margin-top: 20px;
+    justify-content: space-between;
 }
 
 .link {
@@ -84,7 +119,7 @@ h2 {
     display: flex;
     flex-direction: row;
     height: 500px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     column-gap: 10px;
     font-size: 14px;
     margin-bottom: 80px;
@@ -94,6 +129,19 @@ h2 {
     display: flex;
     flex-direction: column;
     background-color: white;
+    box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 23px;
+    justify-content: space-evenly;
+    width: 22%;
+    height: 500px;
+    font-size: 13.5px;
+    color: #222222;
+}
+
+.blocoinfo2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f9;
     box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.15);
     border-radius: 23px;
     justify-content: space-evenly;
@@ -152,6 +200,59 @@ h2 {
 }
 
 .meu-botao-ativo:hover {
+    color: white;
+    background-color: #007BFF;
+}
+
+.blocoinfo2 h3 {
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.foto-info2 {
+    width: 100%;
+    height: 175px;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+}
+
+.informacoes2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+}
+
+.foto-pqn2 {
+    height: 17px;
+    width: 17px;
+    margin-left: 20px;
+    margin-right: 0%;
+}
+
+.textos2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.meu-botao-ativo2 {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #007BFF;
+    color: #007BFF;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+}
+
+.meu-botao-ativo2:hover {
     color: white;
     background-color: #007BFF;
 }
@@ -219,8 +320,8 @@ h2 {
     display: flex;
     background-color: #f6f6f9;
     border-radius: 23px;
-    margin: 10px 20px 0 47px;
     text-align: left;
+    margin-top: 10px;
 }
 
 .img-trilha {
@@ -260,17 +361,15 @@ h2 {
 
 .botao-ativo {
     display: block;
-    width: 170%;
+    width: 100%;
     height: 40px;
     align-content: center;
-    margin: 20px auto 0;
     text-align: center;
     text-decoration: none;
     border: 1px solid #007BFF;
     border-radius: 23px;
     font-size: 20px;
     color: #007BFF;
-    margin-top: 20px;
 }
 
 .botao-ativo:hover {
@@ -291,26 +390,29 @@ h2 {
 
 .cartaz2 {
     width: 100%;
+    max-width: 1500px;
     display: block;
     margin: 0 auto;
     padding: 0px;
+    border-radius: 20px;
 }
 
 .container {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 95%;
+    max-width: 1500px;
     margin: 0 auto 2rem auto;
 }
 
 .bloquinho {
     background-color: #f6f6f9;
-    padding: 20px;
+    padding: 2rem;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    height: 250px;
+    max-height: 250px;
+    height: 100%;
     
     display: flex;
     flex-direction: column;
@@ -321,33 +423,34 @@ h2 {
 
 .bloquinho p {
     color: #555;
-    font-size: 20px;
+    font-size: 1.05rem;
 }
 
 .icone-promo {
-    height: 40px;
-    width: 40px;
-    margin-bottom: 20px;
+    height: auto;
+    width: 12%;
+    margin-bottom: 0.2rem;
 }
 
 .avaliacao {
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 675px;
+    max-height: 675px;
+    height: 100%;
+    max-width: 1500px;
 }
 
 .textinho {
-    margin-bottom: 28px;
-    margin-top: 20px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 .avaliacoes {
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
+    justify-content: space-between;
+    gap: 1.8rem;
 }
 
 .bloco {
@@ -357,27 +460,34 @@ h2 {
     box-shadow: 0 1.5px 1.5px rgba(0, 0, 0, 0.15);
     border-radius: 23px;
     justify-content: space-around;
-    width: 450px;
-    height: 450px;
+    width: 100%;
+    height: 30rem;
 }
 
 .perfil {
-    width: 105px;
+    max-width: 105px;
+    width: 80%;
     border-radius: 50%;
     align-self: center;
-    margin-top: 40px;
+    margin-top: 2rem;
+}
+
+.nome {
+    font-size: 1.2rem;
 }
 
 .juntos {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0.5rem;
 }
 
 .insta {
-    width: 20px;
-    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .fala {
@@ -387,11 +497,12 @@ h2 {
     text-align: center;
     margin-left: 35px;
     margin-right: 35px;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .estrelas {
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
     align-self: center;
     margin-bottom: 15px;
 }
@@ -400,7 +511,6 @@ details {
     background-color: #f6f6f9;
     border-radius: 10px;
     padding: 1rem;
-    margin: 0 2rem 0 2rem;
     cursor: pointer;
     font-size: 20px;
 }
@@ -448,48 +558,60 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #222222;
+  padding: 1.5rem;
 }
 
 footer h2{
     color: white;
-    font-size: 20px;
-    margin-left: 0px;
+    font-size: 1.2rem;
+    margin-top: 20px;
 }
 
 .footer-geral {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
+    justify-content: space-between;
 }
 
 .kmais {
-    font-size: 27px;
-}
-
-.reclame-aqui {
-    margin-left: 30px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .kmais-footer {
     font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reclame-aqui {
+    margin-bottom: 0.8rem;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
 }
 
 .colunas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 60px;
     text-align: left;
+    justify-content: space-between;
 }
 
 .colunas p {
     color: #d2d2d6;
+    justify-content: space-between;
 }
 
 .colunas a {
     text-decoration: none;
     color: #d2d2d6;
+    justify-content: space-between;
 }
 
 .coluna {
@@ -497,17 +619,17 @@ footer h2{
     min-width: 150px;
     max-width: 220px;
     text-align: left;
-    font-size: 16px;
+    font-size: 1.5rem;
+    justify-content: space-between;
 }
 
 .coluna h2 {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .coluna p {
-    margin: 0 30px;
-    font-size: 15px;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .linha-rodape {
@@ -519,11 +641,160 @@ footer h2{
 }
 
 .direitos {
-    padding: 100px 20px 60px 20px;
+    padding: 50px 0px 10px 0px;
     text-align: center;
 }
 
 .direitos p {
     color: #B9B9B9;
-    font-size: 14.3px;
+    font-size: 0.9rem;
 }
+
+.trilhas {
+    display: none;
+}
+
+@media screen and (max-width: 922px) {
+    .secoes {
+        display: none;
+    }
+
+    
+    .tracinhos {
+    display: flex;
+    color: rgb(58, 58, 58);
+    }
+
+    .material-icons:hover {
+    cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .categories {
+        display: flex;
+        max-width: 768px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 922px) {
+      .carrossel {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+      }
+
+      .blocoinfo {
+        width: 50%;
+      }
+
+      .blocoinfo2 {
+        width: 50%;
+      }
+
+      .continuar-evento {
+        width: 50%;
+      }
+
+      .trilha {
+        display: none;
+      }
+
+      .estrelas {
+        width: 50%;
+      }
+
+      .perfil {
+        width: 50%;
+      }
+
+      .reclame-aqui {
+        width: 50%;
+      }
+
+      .trilhas {
+        display: block;
+      }
+
+      .avaliacao {
+        height: 50%;
+      }
+    }
+
+/* .avaliacao {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-height: 675px;
+    height: 100%;
+    max-width: 1500px;
+}
+
+.textinho {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.avaliacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.8rem;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 1.5px 1.5px rgba(0, 0, 0, 0.15);
+    border-radius: 23px;
+    justify-content: space-around;
+    width: 100%;
+    height: 70vh;
+}
+
+.perfil {
+    max-width: 105px;
+    width: 80%;
+    border-radius: 50%;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+.nome {
+    font-size: 1.2rem;
+}
+
+.juntos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.insta {
+    max-width: 20px;
+    max-height: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.fala {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 35px;
+    margin-right: 35px;
+    font-size: 1rem;
+}
+
+.estrelas {
+    max-width: 200px;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 15px;
+} */

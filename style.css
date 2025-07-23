@@ -16,21 +16,26 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 80px;
+    height: 3rem;
     align-items: center;
     max-width: 1500px;
-    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     padding: 1.5rem;
-}
-
-.tracinhos {
-    display: none;
 }
 
 .secoes {
     display: flex;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 3rem;
+}
+
+.buscador {
+    display: none;
+}
+
+.tracinhos {
+    display: none;
 }
 
 section {
@@ -113,6 +118,10 @@ h2 {
     display: block;
     margin: 0 auto;
     text-decoration: none;
+}
+
+.mobile-cartaz {
+    display: none;
 }
 
 .carrossel {
@@ -661,19 +670,29 @@ footer h2{
 
     
     .tracinhos {
-    display: flex;
-    color: rgb(58, 58, 58);
+        display: flex;
+        color: rgb(58, 58, 58);
+        margin-left: auto;
     }
 
     .material-icons:hover {
-    cursor: pointer;
+        cursor: pointer;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .busca {
+        justify-content: center;
+        margin-left: auto;
     }
 }
 
 @media screen and (max-width: 940px) {
     .categories {
         display: flex;
-        max-width: 768px;
+        max-width:940px;
         justify-content: space-between;
         flex-wrap: wrap;
     }
@@ -724,77 +743,103 @@ footer h2{
       }
     }
 
-/* .avaliacao {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    max-height: 675px;
-    height: 100%;
-    max-width: 1500px;
-}
+@media screen and (max-width: 768px) {
+    .carrossel {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+      }
 
-.textinho {
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-}
+    .categories {
+        display: flex;
+        max-width: 768px;
+        width: 90%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
 
-.avaliacoes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1.8rem;
-}
+    .blocoinfo {
+        width: 50%;
+      }
 
-.bloco {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: 0 1.5px 1.5px rgba(0, 0, 0, 0.15);
-    border-radius: 23px;
-    justify-content: space-around;
-    width: 100%;
-    height: 70vh;
-}
+    .blocoinfo2 {
+        width: 50%;
+      }
 
-.perfil {
-    max-width: 105px;
-    width: 80%;
-    border-radius: 50%;
-    align-self: center;
-    margin-top: 2rem;
-}
+    .continuar-evento {
+        width: 50%;
+      }
 
-.nome {
-    font-size: 1.2rem;
-}
+    .trilha {
+        display: none;
+      }
 
-.juntos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-}
+    .estrelas {
+        width: 50%;
+      }
 
-.insta {
-    max-width: 20px;
-    max-height: 20px;
-    width: 100%;
-    height: 100%;
-}
+    .perfil {
+        width: 50%;
+      }
 
-.fala {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    margin-left: 35px;
-    margin-right: 35px;
-    font-size: 1rem;
-}
+    .reclame-aqui {
+        width: 50%;
+      }
 
-.estrelas {
-    max-width: 200px;
-    width: 100%;
-    align-self: center;
-    margin-bottom: 15px;
-} */
+    .trilhas {
+        display: block;
+      }
+
+    .avaliacao {
+        max-height: 5000px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+    .avaliacoes {
+        display: flex;
+        flex-direction: column;
+      }
+
+    .cartaz1 {
+        display: none;
+      }
+
+    .cartaz2 {
+        display: none;
+      }
+
+    .mobile-cartaz {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-mobile {
+        width: 92.1vw;
+      }
+
+    .banner-mobile2 {
+        width: 92.1vw;
+        border-radius: 23px;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    .busca {
+        display: none;
+      }
+
+    .buscador {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

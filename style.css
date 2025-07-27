@@ -1087,10 +1087,6 @@ footer h2{
     header {
         padding: 1rem;
     }
-
-    .avaliacoes {
-        max-width: fit-content;
-    }
 }
 
 @media screen and (max-width: 610px){

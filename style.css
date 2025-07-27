@@ -519,7 +519,7 @@ summary {
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
-    margin: 0 auto 2rem auto;
+    /* margin: 0 auto 2rem auto; */
 }
 
 .bloquinho {
@@ -542,10 +542,12 @@ summary {
 .bloquinho p {
     color: #555;
     font-size: 1.05rem;
+    max-width: fit-content;
 }
 
 .icone-promo {
     height: auto;
+    max-width: fit-content;
     width: 1.7rem;
     margin-bottom: 0.2rem;
 }

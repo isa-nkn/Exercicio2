@@ -16,10 +16,10 @@
                 </a>
 
                 <div class="busca">
-                    <form action="/search" method="GET">
-                        <input type="text" name="q" placeholder="Pesquisar eventos">
-                        <button type="submit">Pesquisar</button>
-                    </form>
+                    <div class="search-box">
+                        <span class="material-icons" id="search">search</span>
+                        <input type="text" class="input" placeholder="Pesquisar eventos">
+                    </div>
                 </div>
 
                 <div class="secoes">
@@ -35,10 +35,10 @@
                 </div>
 
                 <div class="buscador">
-                    <form action="/search" method="GET">
-                            <input type="text" name="q" placeholder="Pesquisar eventos">
-                            <button type="submit">Pesquisar</button>
-                        </form>
+                    <div class="search-box">
+                        <span class="material-icons" id="search">search</span>
+                        <input type="text" class="input" placeholder="Pesquisar eventos">
+                    </div>
                 </div>
             </header>
             <main>
@@ -61,33 +61,43 @@
                     <div class="contem">
                         <!--Carrossel-->
                         <h2>Principais categorias</h2>
-                        <div class="categories">
-                            <div class="cats">
-                                <a href="Categorias.html" class="link">
-                                    <img class="categorias" src="./assets/corridarua.png" alt="Banner corrida de rua">
-                                    <p class="descricao">Corrida de Rua</p>
-                                </a>
-                            </div>
+                        <div class="conteudo2">
+                            <div class="categories">
+                                <div class="cats">
+                                    <article class="card">
+                                        <a href="Categorias.html" class="link">
+                                            <img class="categorias" src="./assets/corridarua.png" alt="Banner corrida de rua">
+                                            <p class="descricao">Corrida de Rua</p>
+                                        </a>
+                                    </article>
+                                </div>
 
-                            <div class="cats">
-                                <a href="Categorias.html" class="link">
-                                    <img class="categorias" src="./assets/ciclismo.png" alt="Banner ciclismo">
-                                <p class="descricao">Ciclismo</p>
-                            </a>
-                            </div>
+                                <div class="cats">
+                                    <article class="card">
+                                        <a href="Categorias.html" class="link">
+                                            <img class="categorias" src="./assets/ciclismo.png" alt="Banner ciclismo">
+                                        <p class="descricao">Ciclismo</p>
+                                        </a>
+                                    </article>
+                                </div>
 
-                            <div class="cats">
-                                <a href="Categorias.html" class="link">
-                                    <img class="categorias" src="./assets/todoseventos.png" alt="Banner todos os eventos">
-                                    <p class="descricao">Todos Eventos</p>
-                                </a>
-                            </div>
+                                <div class="cats">
+                                    <article class="card">
+                                        <a href="Categorias.html" class="link">
+                                            <img class="categorias" src="./assets/todoseventos.png" alt="Banner todos os eventos">
+                                            <p class="descricao">Todos Eventos</p>
+                                        </a>
+                                    </article>
+                                </div>
 
-                            <div class="cats">
-                                <a href="Categorias.html" class="link">
-                                    <img class="categorias" src="./assets/campoetrilha.png" alt="Banner campo e trilha">
-                                    <p class="descricao">Campo e Trilha</p>
-                                </a>
+                                <div class="cats">
+                                    <article class="card">
+                                        <a href="Categorias.html" class="link">
+                                            <img class="categorias" src="./assets/campoetrilha.png" alt="Banner campo e trilha">
+                                            <p class="descricao">Campo e Trilha</p>
+                                        </a>
+                                    </article>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -98,106 +108,106 @@
                         <h2>Corrida de rua</h2>
                         <!--Carrossel-->
                         <div class="carrossel">
-                            <div class="blocoinfo">
-                                <img class="foto-info" src="./assets/maratona-fogo.png" alt="Cartaz da Meia Maratona do Fogo - 2025">
-                                <h3 class="textos">6° MEIA MARATONA DO FOGO - 2025</h3><br>
+                                <div class="blocoinfo">
+                                    <img class="foto-info" src="./assets/maratona-fogo.png" alt="Cartaz da Meia Maratona do Fogo - 2025">
+                                    <h3 class="textos">6° MEIA MARATONA DO FOGO - 2025</h3><br>
 
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/data.png">
-                                    <p class="textos">20 DE JULHO - 06:30</p>
-                                </div>
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/modalidade.png">
-                                    <p class="textos">Corrida de rua</p>
-                                </div>
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/local.png">
-                                    <p class="textos">DOURADOS - MS</p>
-                                </div>
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/organizador.png">
-                                    <p class="textos">Organizador: Prefeitura Municipal de Dourados - FUNED</p><br>
-                                </div>
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/data.png">
+                                        <p class="textos">20 DE JULHO - 06:30</p>
+                                    </div>
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/modalidade.png">
+                                        <p class="textos">Corrida de rua</p>
+                                    </div>
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/local.png">
+                                        <p class="textos">DOURADOS - MS</p>
+                                    </div>
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/organizador.png">
+                                        <p class="textos">Organizador: Prefeitura Municipal de Dourados - FUNED</p><br>
+                                    </div>
 
-                                <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
-                            </div>
-
-                            <div class="blocoinfo">
-                                <img class="foto-info" src="./assets/190-dourados.png" alt="Cartaz da 2° corrida do 3°BPM Dourados, MS">
-                                <h3 class="textos">2° CORRIDA DO 3° BPM - CIRCUITO 190 ANOS PMMS - DOURADOS MS</h3><br>
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/data.png">
-                                    <p class="textos">2 DE AGOSTO - 18:00</p>
-                                </div>
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/modalidade.png">
-                                    <p class="textos">Corrida de rua</p>
-                                </div>
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/local.png">
-                                    <p class="textos">DOURADOS - MS</p>
-                                </div>
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/organizador.png">
-                                    <p class="textos">Organizador: PMMS - 3°BPM</p><br>
-                                </div>
-                                
-                                <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
-                            </div>
-
-                            <div class="blocoinfo">
-                                <img class="foto-info" src="./assets/5km.png" alt="Cartaz corrida beneficente Fforte Fit">
-                                <h3 class="textos">1° CORRIDA BENEFICENTE FFORTE FIT</h3><br>
-
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/data.png">
-                                    <p class="textos">3 DE AGOSTO</p>
+                                    <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
                                 </div>
 
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/modalidade.png">
-                                    <p class="textos">Corrida de rua</p>
+                                <div class="blocoinfo">
+                                    <img class="foto-info" src="./assets/190-dourados.png" alt="Cartaz da 2° corrida do 3°BPM Dourados, MS">
+                                    <h3 class="textos">2° CORRIDA DO 3° BPM - CIRCUITO 190 ANOS PMMS - DOURADOS MS</h3><br>
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/data.png">
+                                        <p class="textos">2 DE AGOSTO - 18:00</p>
+                                    </div>
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/modalidade.png">
+                                        <p class="textos">Corrida de rua</p>
+                                    </div>
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/local.png">
+                                        <p class="textos">DOURADOS - MS</p>
+                                    </div>
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/organizador.png">
+                                        <p class="textos">Organizador: PMMS - 3°BPM</p><br>
+                                    </div>
+                                    
+                                    <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
                                 </div>
 
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/local.png">
-                                    <p class="textos">IVINHEMA - MS</p>
+                                <div class="blocoinfo">
+                                    <img class="foto-info" src="./assets/5km.png" alt="Cartaz corrida beneficente Fforte Fit">
+                                    <h3 class="textos">1° CORRIDA BENEFICENTE FFORTE FIT</h3><br>
+
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/data.png">
+                                        <p class="textos">3 DE AGOSTO</p>
+                                    </div>
+
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/modalidade.png">
+                                        <p class="textos">Corrida de rua</p>
+                                    </div>
+
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/local.png">
+                                        <p class="textos">IVINHEMA - MS</p>
+                                    </div>
+
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/organizador.png">
+                                        <p class="textos">Organizador: Academia FFORTE FIT</p><br>
+                                    </div>
+
+                                    <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
                                 </div>
 
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/organizador.png">
-                                    <p class="textos">Organizador: Academia FFORTE FIT</p><br>
+                                <div class="blocoinfo">
+                                    <img class="foto-info" src="./assets/bpm-tres-lagoas.png" açt="Cartaz corrida do BPM Três Lagoas">
+                                    <h3 class="textos">CORRIDA E CAMINHADA DO 2° BPM de TRÊS LAGOAS MS - CIRCUITO 190 ANOS DA PMMS</h3><br>
+
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/data.png">
+                                        <p class="textos">9 DE AGOSTO - 17:00</p>
+                                    </div>
+
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/modalidade.png">
+                                        <p class="textos">Corrida de rua</p>
+                                    </div>
+
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/local.png">
+                                        <p class="textos">TRÊS LAGOAS - MS</p>
+                                    </div>
+
+                                    <div class="informacoes">
+                                        <img class="foto-pqn" src="./assets/organizador.png">
+                                        <p class="textos">Organizador: 2° BPMMS</p><br>
+                                    </div>
+
+                                    <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
                                 </div>
-
-                                <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
-                            </div>
-
-                            <div class="blocoinfo">
-                                <img class="foto-info" src="./assets/bpm-tres-lagoas.png" açt="Cartaz corrida do BPM Três Lagoas">
-                                <h3 class="textos">CORRIDA E CAMINHADA DO 2° BPM de TRÊS LAGOAS MS - CIRCUITO 190 ANOS DA PMMS</h3><br>
-
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/data.png">
-                                    <p class="textos">9 DE AGOSTO - 17:00</p>
-                                </div>
-
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/modalidade.png">
-                                    <p class="textos">Corrida de rua</p>
-                                </div>
-
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/local.png">
-                                    <p class="textos">TRÊS LAGOAS - MS</p>
-                                </div>
-
-                                <div class="informacoes">
-                                    <img class="foto-pqn" src="./assets/organizador.png">
-                                    <p class="textos">Organizador: 2° BPMMS</p><br>
-                                </div>
-
-                                <a  href="Categorias.html" class="meu-botao-ativo">Inscrições abertas</a>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -289,7 +299,7 @@
                 <!--Corrida de trilha-->
                 <section>
                     <div class="contem">
-                        <h2>Corrida de trilha</h2>
+                        <h2 class="titulo-trilha">Corrida de trilha</h2>
                         <div class="trilha">
                             <img class="img-trilha" src="./assets/piraputanga.png" alt="Pantanal Ultra">
 
@@ -321,34 +331,34 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
                     
-                    <div class="trilhas">
-                        <div class="carrossel">
-                            <div class="blocoinfo2">
-                                    <img class="foto-info2" src="./assets/piraputanga.png" alt="Pantanal Ultra">
-                                    <h3 class="textos2">PANTANAL ULTRA 2025</h3><br>
+                        <div class="trilhas">
+                            <div class="carrossel">
+                                <div class="blocoinfo2">
+                                        <img class="foto-info2" src="./assets/piraputanga.png" alt="Pantanal Ultra">
+                                        <h3 class="textos2">PANTANAL ULTRA 2025</h3><br>
 
-                                    <div class="informacoes2">
-                                        <img class="foto-pqn" src="./assets/data.png">
-                                        <p class="textos">16 DE AGOSTO - 22:00</p>
-                                    </div>
-                                    <div class="informacoes2">
-                                        <img class="foto-pqn" src="./assets/modalidade.png">
-                                        <p class="textos2">Corrida de trilha</p>
-                                    </div>
-                                    <div class="informacoes2">
-                                        <img class="foto-pqn" src="./assets/local.png">
-                                        <p class="textos2">AQUIDAUANA - MS</p>
-                                    </div>
-                                    <div class="informacoes2">
-                                        <img class="foto-pqn2" src="./assets/organizador.png">
-                                        <p class="textos2">Organizador: VO2 Corrida de Rua</p><br>
-                                    </div>
+                                        <div class="informacoes2">
+                                            <img class="foto-pqn" src="./assets/data.png">
+                                            <p class="textos">16 DE AGOSTO - 22:00</p>
+                                        </div>
+                                        <div class="informacoes2">
+                                            <img class="foto-pqn" src="./assets/modalidade.png">
+                                            <p class="textos2">Corrida de trilha</p>
+                                        </div>
+                                        <div class="informacoes2">
+                                            <img class="foto-pqn" src="./assets/local.png">
+                                            <p class="textos2">AQUIDAUANA - MS</p>
+                                        </div>
+                                        <div class="informacoes2">
+                                            <img class="foto-pqn2" src="./assets/organizador.png">
+                                            <p class="textos2">Organizador: VO2 Corrida de Rua</p><br>
+                                        </div>
 
-                                    <a  href="Categorias.html" class="meu-botao-ativo2">Inscrições abertas</a>
+                                        <a  href="Categorias.html" class="meu-botao-ativo2">Inscrições abertas</a>
                                 </div>
-                        </div>
+                            </div>
+                    </div>
                     </div>
                 </section>
                 <!--Outros-->
@@ -509,7 +519,7 @@
                         <div class="avaliacao">
                             <div class="textinho">
                                 <h2>A Kmais é muito mais do que uma plataforma de eventos!</h2>
-                                <p>Veja o que nossos clientes dizem dos nossos serviços!</p><br>
+                                <p>Veja o que nossos clientes dizem dos nossos serviços!</p>
                             </div>
 
                             <div class="avaliacoes">
@@ -553,66 +563,99 @@
                 <!--Dúvidas frequentes-->
                 <section>
                     <div class="contem">
+                        <h2 class="duvs">Dúvidas frequentes</h2><br>
                         <div class="doubts">
-                            <h2>Dúvidas frequentes</h2><br>
-                            <details>
+                            <input type="checkbox" id="check">
+
+                            <details class="custom-detail">
                                 <summary>Não consigo recuperar minha senha ou meu cadastro.</summary><br>
-                                <p>Em caso de perda da senha ou dificuldade para recuperá-la, entre em contato com o atendimento Whatsapp e informe o seu e-mail de login. O atendimento pode levar até 24 horas para a resposta.</p><br>
+                                <p class="detalhamento">Em caso de perda da senha ou dificuldade para recuperá-la, entre em contato com o atendimento Whatsapp e informe o seu e-mail de login. O atendimento pode levar até 24 horas para a resposta.</p><br>
                             </details><br>
-                            <details>
+
+                            <details class="custom-detail">
                                 <summary>Paguei o meu boleto mas o evento ainda aparece como pagamento "Pendente".</summary><br>
-                                <p>Os pagamentos em boleto podem levar até 48h úteis para serem compensados pelos bancos e confirmados como "Pago" no status das compras do atleta. A confirmação é feita automaticamente pelos bancos, após a compensação.</p><br>
+                                <p class="detalhamento">Os pagamentos em boleto podem levar até 48h úteis para serem compensados pelos bancos e confirmados como "Pago" no status das compras do atleta. A confirmação é feita automaticamente pelos bancos, após a compensação.</p><br>
                             </details><br>
-                            <details>
+
+                            <details class="custom-detail">
                                 <summary>Meu boleto está dando mensagem de erro quando tento realizar o pagamento.</summary><br>
-                                <p>Caso o seu pagamento com boleto esteja dando erro, aguarde 30 minutos e tente realizar o pagamento. Os boletos são documentos emitidos entre bancos e validados pelo Banco Central. Pode, eventualmente, levar alguns minutos para que o documento seja validado para o pagamento.</p><br>
+                                <p class="detalhamento">Caso o seu pagamento com boleto esteja dando erro, aguarde 30 minutos e tente realizar o pagamento. Os boletos são documentos emitidos entre bancos e validados pelo Banco Central. Pode, eventualmente, levar alguns minutos para que o documento seja validado para o pagamento.</p><br>
                             </details><br>
 
-                            <div class="texto">
-                            <input type="checkbox" id="vermais">
-                            
-                            <div class="conteudo-escondido">
-                                <details>
-                                <summary>Meu pagamento PIX está dando mensagem de erro.</summary><br>
-                                <p>
-                                    Caso esteja recebendo mensagem no pagamento com PIX, verifique se todos os dígitos do código "Copia e Cola" foram colados no App do seu banco; Verifique se foi acrescentado "https://" no início do código. Se sim, é necessário excluí-lo; Verifique se o código está sendo colado na área correta do App do banco. A área "Chave Pix" não é a área "Copia e Cola".
-                                </p><br>
+                            <!--Hidden content-->
+                            <div class="hidden">
+                                <details class="custom-detail">
+                                    <summary>Meu pagamento PIX está dando mensagem de erro.</summary><br>
+                                    <p class="detalhamento">
+                                        Caso esteja recebendo mensagem no pagamento com PIX, verifique se todos os dígitos do código "Copia e Cola" foram colados no App do seu banco; Verifique se foi acrescentado "https://" no início do código. Se sim, é necessário excluí-lo; Verifique se o código está sendo colado na área correta do App do banco. A área "Chave Pix" não é a área "Copia e Cola".
+                                    </p><br>
                                 </details><br>
-                                
-                                <details>
-                                <summary>Meu pagamento com cartão fica processando e não finaliza.</summary><br>
-                                <p>
-                                    Caso o seu pagamento com cartão de crédito não esteja concluindo, verifique se o mês e ano de vencimento estão digitados no formato mm/20aa (com 2 dígitos no mês e 4 dígitos no ano).
-                                </p><br>
+                                    
+                                <details class="custom-detail">
+                                    <summary>Meu pagamento com cartão fica processando e não finaliza.</summary><br>
+                                    <p class="detalhamento">
+                                        Caso o seu pagamento com cartão de crédito não esteja concluindo, verifique se o mês e ano de vencimento estão digitados no formato mm/20aa (com 2 dígitos no mês e 4 dígitos no ano).
+                                    </p><br>
                                 </details><br>
 
-                                <details>
+                                <details class="custom-detail">
                                     <summary>Como fazer minha inscrição utilizando VOUCHER/CÓDIGO de descontos?</summary><br>
-                                    <p>Os códigos de descontos são fornecidos exclusivamente pelos organizadores do evento. Para utilizá-lo é necessário que o atleta tenha o cadastro completo na plataforma Kmais (Você pode acessar as orientações do cadastro pelo FAQ do site www.kmaisclube.com.br). Após fazer o login com o email de senha cadastrados na plataforma Kmais, o atleta deve escolher o evento desejado. Em seguida, escolher a modalidade, tamanho do kit e inserir o código (com 8 dígitos alfanuméricos) no local demarcado para isso. Depois, basta selecionar a opção de pagamento. Para a opção “Comprar para um amigo”, utilizando o VOUCHER/CÓDIGO, é necessário que o atleta utilize o computador por questões de segurança de dados de terceiros (LGPD). Qualquer dúvida, basta enviar mensagem para o Whatsapp 67 98112 9003.</p><br>
-                                    </details><br>
+                                    <p class="detalhamento">Os códigos de descontos são fornecidos exclusivamente pelos organizadores do evento. Para utilizá-lo é necessário que o atleta tenha o cadastro completo na plataforma Kmais (Você pode acessar as orientações do cadastro pelo FAQ do site www.kmaisclube.com.br). Após fazer o login com o email de senha cadastrados na plataforma Kmais, o atleta deve escolher o evento desejado. Em seguida, escolher a modalidade, tamanho do kit e inserir o código (com 8 dígitos alfanuméricos) no local demarcado para isso. Depois, basta selecionar a opção de pagamento. Para a opção “Comprar para um amigo”, utilizando o VOUCHER/CÓDIGO, é necessário que o atleta utilize o computador por questões de segurança de dados de terceiros (LGPD). Qualquer dúvida, basta enviar mensagem para o Whatsapp 67 98112 9003.</p><br>
+                                </details><br>
+
+                                <details class="custom-detail">
+                                    <summary>Meu pagamento PIX está dando mensagem de erro.</summary><br>
+                                    <p class="detalhamento">Caso esteja recebendo mensagem no pagamento com PIX, verifique se todos os dígitos do código "Copia e Cola" foram colados no App do seu banco; Verifique se foi acrescentado "https://" no início do código. Se sim, é necessário excluí-lo; Verifique se o código está sendo colado na área correta do App do banco. A área "Chave Pix" não é a área "Copia e Cola".</p><br>
+                                </details><br>
+
+                                <details class="custom-detail">
+                                    <summary>Meu pagamento com cartão fica processando e não finaliza.</summary><br>
+                                    <p class="detalhamento">Caso o seu pagamento com cartão de crédito não esteja concluindo, verifique se o mês e ano de vencimento estão digitados no formato mm/20aa (com 2 dígitos no mês e 4 dígitos no ano).</p><br>
+                                </details><br>
+
+                                <details class="custom-detail">
+                                    <summary>Como fazer minha inscrição utilizando VOUCHER/CÓDIGO de descontos?</summary><br>
+                                    <p class="detalhamento">Os códigos de descontos são fornecidos exclusivamente pelos organizadores do evento. Para utilizá-lo é necessário que o atleta tenha o cadastro completo na plataforma Kmais (Você pode acessar as orientações do cadastro pelo FAQ do site www.kmaisclube.com.br). Após fazer o login com o email de senha cadastrados na plataforma Kmais, o atleta deve escolher o evento desejado. Em seguida, escolher a modalidade, tamanho do kit e inserir o código (com 8 dígitos alfanuméricos) no local demarcado para isso. Depois, basta selecionar a opção de pagamento. Para a opção “Comprar para um amigo”, utilizando o VOUCHER/CÓDIGO, é necessário que o atleta utilize o computador por questões de segurança de dados de terceiros (LGPD). Qualquer dúvida, basta enviar mensagem para o Whatsapp 67 98112 9003.</p><br>
+                                </details><br>
+
+                                <details class="custom-detail">
+                                    <summary>Já tenho cadastro.</summary><br>
+                                    <p class="detalhamento">Escolha um evento e, em seguida, escolha a modalidade, tamanho do kit (quando houver a opção), forma de pagamento e marque os checkbox de aceitação da LGPD (Lei Geral de Proteção de Dados) e aceitação da taxa de 8% para comodidade e segurança nas operações de compra oline (LGPD).</p><br>
+                                </details><br>
+
+                                <details class="custom-detail">
+                                    <summary>Quero me inscrever.</summary><br>
+                                    <p class="detalhamento">Para inscrever-se, basta acessar o site ww.kmaisclube.com.br, clicar em "Cadastrar-se", preencher os dados e criar um login e senha que serão usados sempre que desejar acessar os eventos disponíveis no site. Em seguida, escolha um evento e complete os dados do cadastro. O cadastro é feito apenas uma vez e, para acessar novos eventos, basta digitar o seu login e senha. Após cirar um login, ao acessar pelo computador, clique em "Entrar". Ao aceesar pelo celular, clique em "Login".</p><br>
+                                </details><br>
+
+                                <details class="custom-detail">
+                                    <summary>Quando será a entrega dos kits?</summary><br>
+                                    <p class="detalhamento">Os avisos de entregas de kits, inscrições presenciais, lotes promocionais e lançamentos de eventos serão publicados nos stories do Instagram @kmaisclube, sempre que definidos e encaminhados pelos organizadores.</p><br>
+                                </details><br>
+
+                                <details class="custom-detail">
+                                    <summary>Quando será a inscrição presencial?</summary><br>
+                                    <p class="detalhamento">Os avisos de entregas de kits, inscrições presenciais, lotes promocionais e lançamentos de eventos serão publicados nos stories do Instagram @kmaisclube, sempre que definidos e encaminhados pelos organizadores.</p><br>
+                                </details><br>
+
+                                <details class="custom-detail">
+                                    <summary>Quando será a inscrição para doadores?</summary><br>
+                                    <p class="detalhamento">Os avisos de entregas de kits, inscrições presenciais, lotes promocionais e lançamentos de eventos serão publicados nos stories do Instagram @kmaisclube, sempre que definidos e encaminhados pelos organizadores.</p><br>
+                                </details><br>
+
+                                <details class="custom-detail">
+                                    <summary>Qual o percurso da corrida?</summary><br>
+                                    <p class="detalhamento">Os avisos de entregas de kits, inscrições presenciais, lotes promocionais e lançamentos de eventos serão publicados nos stories do Instagram @kmaisclube, sempre que definidos e encaminhados pelos organizadores.</p><br>
+                                </details><br>
+
+                                <details class="custom-detail">
+                                    <summary>Meu PIX não dá certo no app bancário.</summary><br>
+                                    <p class="detalhamento">É possível que esteja colando o seu código em "Chave PIX aleatória, que é para CPF, CNPJ, email ou telefone. É necessário que seja colado em "Copia e Cola", um local específico no seu app bancário.</p><br>
+                                </details><br>
+                                <label for="check">Ver menos</label>
                             </div>
-                            <div class="ver">
-                                <label for="vermais" class="botao">Ver mais</label>
-                            </div>
-                            </div>
+                            <label for="check">Ver mais</label>
                         </div>
-
-                        <!--<details>
-                            <details>
-                                <summary>Meu pagamento PIX está dando mensagem de erro.</summary>
-                                <p>Caso esteja recebendo mensagem no pagamento com PIX, verifique se todos os dígitos do código "Copia e Cola" foram colados no App do seu banco; Verifique se foi acrescentado "https://" no início do código. Se sim, é necessário excluí-lo; Verifique se o código está sendo colado na área correta do App do banco. A área "Chave Pix" não é a área "Copia e Cola".</p>
-                            </details><br>
-
-                            <details>
-                                <summary>Meu pagamento com cartão fica processando e não finaliza.</summary>
-                                <p>Caso o seu pagamento com cartão de crédito não esteja concluindo, verifique se o mês e ano de vencimento estão digitados no formato mm/20aa (com 2 dígitos no mês e 4 dígitos no ano).</p>
-                            </details><br>
-
-                            <details>
-                                <summary>Como fazer minha inscrição utilizando VOUCHER/CÓDIGO de descontos?</summary>
-                                <p>Os códigos de descontos são fornecidos exclusivamente pelos organizadores do evento. Para utilizá-lo é necessário que o atleta tenha o cadastro completo na plataforma Kmais (Você pode acessar as orientações do cadastro pelo FAQ do site www.kmaisclube.com.br). Após fazer o login com o email de senha cadastrados na plataforma Kmais, o atleta deve escolher o evento desejado. Em seguida, escolher a modalidade, tamanho do kit e inserir o código (com 8 dígitos alfanuméricos) no local demarcado para isso. Depois, basta selecionar a opção de pagamento. Para a opção “Comprar para um amigo”, utilizando o VOUCHER/CÓDIGO, é necessário que o atleta utilize o computador por questões de segurança de dados de terceiros (LGPD). Qualquer dúvida, basta enviar mensagem para o Whatsapp 67 98112 9003.</p>
-                            </details>-->
-                        </details>
                     </div>
                 </section>
             </main>
@@ -621,11 +664,20 @@
                     <div class="footer-geral">
                         <div class="colunas">
                             <div class="coluna">
-                                <h2 class="kmais">Kmais</h2>
-                                <a href="https://www.reclameaqui.com.br/empresa/kmais-clube/?utm_source=referral&utm_medium=embbed&utm_campaign=ra_verificada&utm_term=vertical" target="_blank">
+                                <img class="kmais-img" src="./assets/logo footer.png">
+                                <a  class="kmais" href="https://www.reclameaqui.com.br/empresa/kmais-clube/?utm_source=referral&utm_medium=embbed&utm_campaign=ra_verificada&utm_term=vertical" target="_blank">
                                     <img class="reclame-aqui" src="./assets/reclame.png" alt="selo de veificação Reclame Aqui">
                                 </a>
                                 <p class="kmais-footer">Siga Kmais nas Redes Sociais</p>
+
+                                <div class="redes-ajuste">
+                                    <a class="kmais" href="https://api.whatsapp.com/send/?phone=%2B5567981129003&text=Ol%C3%A1%2C+estou+entrando+em+contato+com+voc%C3%AA+pelo+whatsapp+do+site+Kmais.&type=phone_number&app_absent=0" target="_blank">
+                                        <img class="redes" src="./assets/wpp-footer.png">
+                                    </a>
+                                    <a class="kmais" href="https://www.instagram.com/kmaisclube/" target="_blank">
+                                        <img class="redes" src="./assets/insta-footer.png">
+                                    </a>
+                                </div>
                             </div>
                             <div class="coluna">
                                 <h2>Sobre a Kmais</h2>
@@ -651,6 +703,21 @@
 
                         <hr class="linha-rodape">
                         <div class="direitos">
+                            <div class="so-dps">
+                                <img class="dps-logo" src="./assets/logo footer.png">
+                                <a class="dps-reclame" href="https://www.reclameaqui.com.br/empresa/kmais-clube/?utm_source=referral&utm_medium=embbed&utm_campaign=ra_verificada&utm_term=vertical" target="_blank">
+                                    <img class="foto-dps" src="./assets/reclame.png">
+                                </a>
+                                <p>Siga Kmais nas Redes Sociais</p>
+                                <div class="redes-dps">
+                                    <a class="kmais-dps" href="https://api.whatsapp.com/send/?phone=%2B5567981129003&text=Ol%C3%A1%2C+estou+entrando+em+contato+com+voc%C3%AA+pelo+whatsapp+do+site+Kmais.&type=phone_number&app_absent=0" target="_blank">
+                                        <img class="redes" src="./assets/wpp-footer.png">
+                                    </a>
+                                    <a class="kmais-dps" href="https://www.instagram.com/kmaisclube/" target="_blank">
+                                        <img class="redes" src="./assets/insta-footer.png">
+                                    </a>
+                                </div>
+                            </div>
                             <p>&copy 2025 KMAIS. Todos os direitos reservados · CNPJ: 45.952.508/0001-28</p>
                         </div>
                     </div>

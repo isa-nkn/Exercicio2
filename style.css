@@ -21,8 +21,41 @@ header {
     align-items: center;
     max-width: 1500px;
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
     padding: 1.5rem;
+}
+
+.busca {
+    max-width: 335px;
+    width: 100%;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    padding: 0.35rem;
+    border: 0.01rem solid #ababab;
+    border-radius: 8px;
+    box-shadow: 0 1.5px 5px rgba(120, 120, 120, 0.15);
+    width: 100%;
+}
+
+.input {
+    border: none;
+    font-size: 1.05rem;
+    padding: 0.4rem;
+    width: 100%;
+}
+
+.input::placeholder {
+    color: #939393;
+}
+
+.input:focus {
+    outline: none;
+}
+
+#search {
+    color: #747474;
 }
 
 .secoes {
@@ -83,14 +116,33 @@ h2 {
     font-size: 25px;
 }
 
-.categories {
-    display: flex;
-    justify-content: space-between;
+.conteudo2 {
+    width: 100%;
 }
 
-.cats {
+.categories {
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: auto;
+}
+
+.categories::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    scroll-snap-align: start;
+    border-radius: 30px;
+    min-height: 13rem;
+    min-width: 2.5rem;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .descricao {
@@ -103,11 +155,9 @@ h2 {
 }
 
 .categorias {
-    display: flex;
+    min-width: 19.99rem;
+    /* max-width: 19.99rem; */
     width: 100%;
-    height: 140px;
-    margin-top: 20px;
-    justify-content: space-between;
 }
 
 .link {
@@ -125,7 +175,7 @@ h2 {
     display: none;
 }
 
-.carrossel {
+/* .carrossel {
     display: flex;
     flex-direction: row;
     height: 500px;
@@ -133,6 +183,21 @@ h2 {
     column-gap: 10px;
     font-size: 14px;
     margin-bottom: 80px;
+} */
+
+.carrossel {
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: auto;
+}
+
+.carrossel::-webkit-scrollbar {
+    display: none;
 }
 
 .blocoinfo {
@@ -142,9 +207,10 @@ h2 {
     box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.15);
     border-radius: 23px;
     justify-content: space-evenly;
-    width: 22%;
-    height: 500px;
-    font-size: 13.5px;
+    min-width: 20rem;
+    width: 100%;
+    min-height: 34rem;
+    font-size: 0.9rem;
     color: #222222;
 }
 
@@ -155,9 +221,10 @@ h2 {
     box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.15);
     border-radius: 23px;
     justify-content: space-evenly;
-    width: 22%;
-    height: 500px;
-    font-size: 13.5px;
+    min-width: 20rem;
+    width: 25%;
+    min-height: 34rem;
+    font-size: 0.9rem;
     color: #222222;
 }
 
@@ -167,6 +234,7 @@ h2 {
 }
 
 .foto-info {
+    max-width: 20rem;
     width: 100%;
     height: 175px;
     border-top-left-radius: 23px;
@@ -294,9 +362,10 @@ h2 {
     display: flex;
     flex-direction: column;
     border-radius: 23px;
-    width: 22%;
-    height: 500px;
-    font-size: 13.5px;
+    min-width: 20rem;
+    width: 100%;
+    min-height: 34rem;
+    font-size: 0.8rem;
     color: #222222;
 }
 
@@ -357,6 +426,44 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 7px;
+}
+
+summary {
+    display: flex;
+    font-weight: 460;
+    font-size: 1.1rem;
+    min-height: 2rem;
+    max-height: 2rem;
+    align-items: center;
+}
+
+.detalhamento {
+    font-size: 1.2rem;
+    font-weight: 340;
+}
+
+.custom-detail summary {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    padding-right: 1.5rem;
+}
+
+.custom-detail summary::marker {
+    display: none;
+}
+
+.custom-detail summary::after {
+    content: "▼";
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(0deg);
+    transition: transform 0.33s ease;
+}
+
+.custom-detail[open] summary::after {
+    transform: rotate(-180deg);
 }
 
 .infos2 {
@@ -457,10 +564,11 @@ h2 {
 }
 
 .avaliacoes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
     gap: 1.8rem;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1500px;
+    margin: 0 auto 2rem auto;
 }
 
 .bloco {
@@ -469,31 +577,39 @@ h2 {
     background-color: white;
     box-shadow: 0 1.5px 1.5px rgba(0, 0, 0, 0.15);
     border-radius: 23px;
-    justify-content: space-around;
+    justify-content: start;
     width: 100%;
-    height: 30rem;
+    min-height: 24rem;
 }
 
 .perfil {
+    display: flex;
     max-width: 105px;
     width: 80%;
     border-radius: 50%;
     align-self: center;
     margin-top: 2rem;
+    align-items: baseline;
 }
 
 .nome {
+    display: flex;
     font-size: 1.2rem;
+    align-items: center;
 }
 
 .juntos {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     gap: 0.5rem;
 }
 
 .insta {
+    display: flex;
+    align-items: baseline;
     max-width: 20px;
     max-height: 20px;
     width: 100%;
@@ -502,11 +618,11 @@ h2 {
 
 .fala {
     display: flex;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+    align-items: baseline;
     margin-left: 35px;
     margin-right: 35px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 1rem;
 }
 
@@ -514,7 +630,17 @@ h2 {
     max-width: 200px;
     width: 100%;
     align-self: center;
-    margin-bottom: 15px;
+    margin-bottom: 0.6rem;
+}
+
+.doubts {
+    min-height: 20rem;
+}
+
+.duvs {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
 }
 
 details {
@@ -525,40 +651,38 @@ details {
     font-size: 20px;
 }
 
-.conteudo-escondido {
-  display: none;
+#check {
+    display: none;
 }
 
-#vermais:checked ~ .conteudo-escondido {
-  display: block;
+#check:checked ~ .hidden {
+    display: block;
 }
 
-#vermais {
-  display: none;
+#check:checked ~ label {
+    display: none;
 }
 
-.ver {
+.hidden {
+    display: none;
+}
+
+label {
     display: flex;
     justify-content: center;
-}
-
-.botao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+    justify-self: center;
+    max-width: 17rem;
+    width: 100%;
     cursor: pointer;
-    border: 1px solid #007BFF;
     color: #007BFF;
-    border-radius: 20px;
-    width: 150px;
-    height: 30px;
-    font-size: 17px;
-    margin-bottom: 40px;
-    font-weight: 500;
+    border: solid 1px #007BFF;
+    background-color: white;
+    padding: 0.5rem 0.8rem;
+    border-radius: 23px;
+    font-size: 1.2rem;
 }
 
-.botao:hover {
+label:hover {
     background-color: #007BFF;
     color: white;
 }
@@ -586,9 +710,15 @@ footer h2{
 }
 
 .kmais {
-    font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
+}
+
+.kmais-img {
+    display: flex;
+    max-width: 6rem;
+    margin-bottom: 1rem;
+    margin-top: 1.4rem;
 }
 
 .kmais-footer {
@@ -599,10 +729,24 @@ footer h2{
 
 .reclame-aqui {
     margin-bottom: 0.8rem;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 6rem;
     height: auto;
     width: auto;
+}
+
+.redes-ajuste {
+    display: flex;
+    gap: 1rem;
+}
+
+.redes {
+    display: flex;
+    max-width: 1.8rem;
+    margin-top: 0.3rem;
+}
+
+.so-dps {
+    display: none;
 }
 
 .colunas {
@@ -644,8 +788,8 @@ footer h2{
 
 .linha-rodape {
     border: none;
-    height: 1px;
-    background-color: #d2d2d6;
+    height: 0.005rem;
+    background-color: #474748;
     margin: 25px auto 0 auto;
     width: 100%;
 }
@@ -656,7 +800,7 @@ footer h2{
 }
 
 .direitos p {
-    color: #B9B9B9;
+    color: #898888;
     font-size: 0.9rem;
 }
 
@@ -669,7 +813,6 @@ footer h2{
         display: none;
     }
 
-    
     .tracinhos {
         display: flex;
         color: rgb(58, 58, 58);
@@ -690,38 +833,14 @@ footer h2{
     }
 }
 
-@media screen and (max-width: 940px) {
-    .categories {
-        display: flex;
-        max-width:940px;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-}
-
 @media screen and (max-width: 922px) {
-      .carrossel {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        gap: 20px;
-      }
-
-      .blocoinfo {
-        width: 50%;
-      }
-
-      .blocoinfo2 {
-        width: 50%;
-      }
-
-      .continuar-evento {
-        width: 50%;
-      }
+     .titulo-trilha {
+        margin-bottom: 0px;
+     } 
 
       .trilha {
         display: none;
-      }
+    }
 
       .estrelas {
         width: 50%;
@@ -737,51 +856,66 @@ footer h2{
 
       .trilhas {
         display: block;
-      }
+    }
 
       .avaliacao {
         height: 50%;
       }
+}
+
+@media screen and (max-width: 640px) {
+
+    .bloco {
+        scroll-snap-align: start;
+        border-radius: 23px;
+        min-height: 70vh;
+        min-width: 92vw;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+    .perfil {
+        min-height: 8rem;
+        min-width: 8rem;
+    }
+
+    .nome {
+        font-size: 1.2rem;
+    }
+
+    .fala {
+        font-size: 1.2rem;
+    }
+    
+    .avaliacoes {
+        display: grid;
+        max-width: 100%;
+        grid-auto-flow: column;
+        scroll-behavior: auto;
+        gap: 1.5rem;
+        overflow-y: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+
+    .avaliacoes::-webkit-scrollbar {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 768px) {
-    .carrossel {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        gap: 20px;
-      }
-
-    .categories {
-        display: flex;
-        max-width: 768px;
-        width: 90%;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 1rem;
+    .conteudo2 {
+        max-height: 8rem;
     }
-
-    .blocoinfo {
-        width: 50%;
-      }
-
-    .blocoinfo2 {
-        width: 50%;
-      }
-
-    .continuar-evento {
-        width: 50%;
-      }
 
     .trilha {
         display: none;
-      }
+    }
 
     .estrelas {
-        width: 50%;
-      }
-
-    .perfil {
         width: 50%;
       }
 
@@ -791,21 +925,12 @@ footer h2{
 
     .trilhas {
         display: block;
-      }
+    }
 
     .avaliacao {
         max-height: 5000px;
+        max-width: 100%;
     }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-      }
-
-    .avaliacoes {
-        display: flex;
-        flex-direction: column;
-      }
 
     .cartaz1 {
         display: none;
@@ -814,6 +939,10 @@ footer h2{
     .cartaz2 {
         display: none;
       }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .mobile-cartaz {
         display: flex;
@@ -829,8 +958,54 @@ footer h2{
         border-radius: 23px;
     }
 
+    /* .bloco {
+        scroll-snap-align: start;
+        border-radius: 23px;
+        min-height: 70vh;
+        min-width: 92vw;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .perfil {
+        min-height: 8rem;
+        min-width: 8rem;
+    }
+
+    .nome {
+        font-size: 1.2rem;
+    }
+
+    .fala {
+        font-size: 1.2rem;
+    }
+    
+    .avaliacoes {
+        display: grid;
+        max-width: 100%;
+        grid-auto-flow: column;
+        scroll-behavior: auto;
+        gap: 1.5rem;
+        overflow-y: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+
+    .avaliacoes::-webkit-scrollbar {
+        display: none;
+    } */
+
+    label {
+        max-width: 100%;
+    }
+
     header {
         flex-wrap: wrap;
+        margin-top: 0.2rem;
+        margin-bottom: 1.5rem;
     }
 
     .busca {
@@ -842,5 +1017,61 @@ footer h2{
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
+        padding-top: 0.7rem;
+        position: relative;
+        z-index: 10;
+    }
+
+    .buscador input {
+        z-index: 11;
+        position: relative;
+    }
+
+    .colunas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kmais {
+        display: none;
+    }
+
+    .kmais-img {
+        display: none;
+    }
+
+    .kmais-footer {
+        display: none;
+    }
+
+    .direitos p {
+        color: white;
+    }
+
+    .so-dps {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .dps-logo {
+        max-width: 5.5rem;
+    }
+
+    .foto-dps {
+        max-width: 6rem;
+    }
+
+    .so-dps p {
+        font-size: 1.05rem;
+        font-weight: 600;
+    }
+
+    .redes-dps {
+        display: flex;
+        gap: 1.2rem;
+        margin-bottom: 2rem;
     }
 }

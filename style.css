@@ -790,7 +790,7 @@ footer h2{
 .linha-rodape {
     border: none;
     height: 0.005rem;
-    background-color: #474748;
+    background-color: #575757;
     margin: 25px auto 0 auto;
     width: 100%;
 }
@@ -1084,9 +1084,12 @@ footer h2{
         font-size: 1rem;
     }
 
-
     header {
         padding: 1rem;
+    }
+
+    .avaliacoes {
+        max-width: fit-content;
     }
 }
 
